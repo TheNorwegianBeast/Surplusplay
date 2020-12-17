@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "Flama-Medium";
+    src: url("../../flama-cufonfonts/Flama-Medium.otf");
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cccccc; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333333; 
+}
+
+/* Set a fixed scrollable wrapper */
+.table-wrap {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+    float: right;
+}
+
+thead tr th {
+    position: sticky;
+    top: 0;
+}
+
+table {
+    overflow-x: hidden;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0;
+}
+
+th {
+    text-align: center;
+    background-color: white;
+    /*height: 50%;*/
+}
+
+tbody {
+    font-family: Flama-Medium;
+    overflow-y: scroll;
+}
+
+table td {
+    padding: 2.5px;
+    font-family: Flama-Light;
+}
+
+thead {
+
+}
+
+.Table_header {
+
+    font-family: Flama-Medium;
+}
+
+
+#top-box {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+#city-name {
+    height: 5%;
+    font-size: 0.8vw;
+    font-family: Flama-Medium;
+    text-align: center;
+    margin-top: 1%;
+    color: #cc0000;
+    white-space: nowrap;
+}
+
+#team-name {
+    font-family: Flama-Medium;
+    text-align: left;
+    font-weight: 500;
+    color: #333333;
+    font-size: 0.8vw;
+    white-space: nowrap;
+    width: 7vw;
+}
+
+
+#font {
+    font-family: Flama-Medium;
+    font-weight: 500;
+    color: #333333;
+    font-size: 0.8vw;
+}
+
+.bergen-img {
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+}
+
+.berlin-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.milan-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.istanbul-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.dubai-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.taskkent-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.islamabad-img {
+    width: 50%;;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.delhi-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.bangkok-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.singapore-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.beijing-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.tokyo-img {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+}
+

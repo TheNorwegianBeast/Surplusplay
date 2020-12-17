@@ -1,0 +1,791 @@
+#mytabledata td,
+#mytabledata th {
+    border: 3px solid transparent;
+}
+
+#UseridentLabel {
+    float: left;
+    padding: 4px;
+}
+
+#filelogo {
+    float: right;
+    /*width: 50%;*/
+    padding: 4px;
+}
+
+.txt-userident {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    float: right;
+    width: 60%;
+}
+
+.inp-userident {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    float: right;
+    width: 60%;
+    position: relative;
+    right: 10%;
+}
+
+.txt-amount {
+    float: left;
+    padding: 7px;
+    width: 25%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-left: 2%;
+    margin-bottom: 43px;
+}
+
+.txt-amount-test {
+    float: right;
+    padding: 7px;
+    width: 34%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-left: 2.7%;
+}
+
+.txt-quantity {
+    float: right;
+    padding: 7px;
+    width: 34%;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    margin-left: 2%;
+}
+
+.txt-quantity-test {
+    float: left;
+    padding: 7px;
+    width: 25%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-left: 26.9%;
+    margin-top: -33px;
+}
+
+.txt-quan-drive {
+    display: none;
+    float: right;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.txt-inp-reg,
+.txt-inp-quantity {
+    display: none;
+    float: right;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    position: relative;
+    right: 10%;
+}
+
+.txt-inp-drive {
+    display: none;
+    float: right;
+    width: 73%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.txt-from-date {
+    float: right;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    position: relative;
+    right: 10%;
+}
+
+.txt-game-level {
+    float: right;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    position: relative;
+    right: 10%;
+}
+
+.txt-to-date {
+    width: 60%;
+    padding: 8px;
+    float: right;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.txt-budtype {
+    float: right;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+
+.label-budget {
+    display: none;
+    float: left;
+    padding: 4px;
+    width: 22%;
+}
+
+.txt-year {
+    float: right;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    position: relative;
+    right: 10%;
+}
+
+.txt-period {
+    float: right;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    /*font-family: 'Open Sans', Helvetica, sans-serif;*/
+    box-sizing: border-box;
+}
+
+
+/* Assign grid instructions to our parent grid container, mobile-first (hide the sidenav) */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: "header" "main" "footer";
+    height: 100vh;
+}
+
+#Admin_logo {
+    float: right;
+}
+
+.header__search {
+    margin-left: 42px;
+}
+
+
+/* Force varying heights to simulate dynamic content */
+
+.card:first-child {
+    height: auto;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: #648ca6;
+}
+
+
+/*------------------csss for admin dropdown toggle button starts---------------------*/
+
+
+/*Admin dropdown section start*/
+
+.sidebar_header {
+    padding: 20px;
+}
+
+.sidenav.active {
+    transform: translateX(0);
+}
+
+.sidenav__close-icon {
+    position: absolute;
+    visibility: visible;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ddd;
+}
+
+.sidenav {
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    overflow-y: hidden;
+    transform: translateX(-245px);
+    transition: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    z-index: 20;
+    background-color: #333333;
+}
+
+.main-cards {
+    column-count: 1;
+    column-gap: 20px;
+    background-color: transparent;
+    margin-top: -92px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    -webkit-column-break-inside: avoid;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    color: #000;
+    background-color: #fff;
+}
+
+#myTable {
+    overflow-x: auto;
+}
+
+.menu-icon {
+    position: fixed;
+    /* Needs to stay visible for all mobile scrolling */
+    display: flex;
+    top: 23px;
+    left: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #138496;
+    border-radius: 2%;
+    z-index: 10;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #fafafa;
+    margin-top: 35px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    height: 150px;
+    background-color: transparent;
+    color: #000;
+    margin-right: 21%;
+    padding: 10px;
+}
+
+.homelist {
+    list-style: none;
+    display: inline-block;
+    font-size: 13px;
+    color: #000;
+}
+
+#listGame {
+    text-decoration: none;
+    color: #000;
+}
+
+.homelist+.homelist::before {
+    display: inline-block;
+    color: #6c757d;
+    content: "/";
+}
+
+.div_row {
+    width: 100%;
+    background-color: transparent;
+    margin-top: -20px;
+}
+
+.h4txt {
+    font-size: 17px;
+    margin-left: 1%;
+    color: #000;
+}
+
+hr {
+    margin-top: -27px;
+    margin-left: 1%;
+    border-top: 0.62px solid rgba(0, 0, 0, 0.1);
+}
+
+table thead tr th {
+    color: black;
+    text-align: left;
+    /*word-break: break-all;*/
+}
+
+table tbody tr td {
+    color: black;
+    text-align: left;
+}
+
+table tbody tr {}
+
+table {
+    border-bottom: 1px solid #dddddd;
+}
+
+.h5-view-game,
+.h5-view-budget {
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+
+/*table button Report section*/
+
+a.button6 {
+    background-color: #0069d9;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 2% 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 1% 2%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#mytabledata {
+    border: 2px solid transparent;
+    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 100%;
+}
+
+#form-elements1 {
+    font-size: 14px;
+    font-weight: normal;
+    background-color: transparent;
+    width: 100%;
+}
+
+#txtlevelname {
+    float: right;
+    width: 60%;
+    padding: 6px;
+}
+
+#txtgame {
+    float: right;
+    width: 62.5%;
+    padding: 6px;
+}
+
+.Parent_Radiogroup1 {
+    margin-left: 20%;
+}
+
+.CardIn {
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/*Error Span CSS Starts*/
+
+.span-left-error {
+    display: inline-block;
+    text-align: left;
+    width: 69%;
+    float: right;
+    font-size: 12px;
+    height: 12px;
+    color: red;
+}
+
+.span-game-error {
+    display: inline-block;
+    text-align: left;
+    width: 70%;
+    float: right;
+    font-size: 12px;
+    height: 12px;
+    color: red;
+}
+.span-game-err{
+    display: inline-block;
+    text-align: left;
+    width: 60%;
+    float: right;
+    font-size: 12px;
+    height: 12px;
+    color: red;
+}
+
+.span-budget-error {
+    display: inline-block;
+    text-align: right;
+    width: 63%;
+    float: right;
+    font-size: 12px;
+    height: 12px;
+    color: red;
+}
+
+
+/*Error Span CSS Ends*/
+
+.add-alert-row {
+    width: 90%;
+    height: 40px;
+    background-color: transparent;
+    margin-left: 1.1%;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+.h6-add-game {
+    width: 100px;
+    font-size: 17px;
+    margin-top: 10px;
+    color: #000;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ccc;
+    white-space: nowrap;
+}
+
+.hr-line {
+    width: 50%;
+    float: left;
+    margin-top: -27px;
+    border-top: 0.62px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-alert-row2 {
+    width: 97%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 30px;
+    padding: 1px 6px 0px 6px;
+    line-height: 42px;
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+    border-radius: 3px;
+}
+
+.add-alert-row3 {
+    width: 97%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 30px;
+    padding: 1px 6px 0px 6px;
+    line-height: 42px;
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f;
+    border-radius: 3px;
+}
+
+.add-alert-row4 {
+    width: 97%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 30px;
+    padding: 1px 6px 0px 6px;
+    line-height: 42px;
+    background-color: #fcf8e3;
+    border-color: #faf2cc;
+    color: #8a6d3b;
+    border-radius: 3px;
+}
+
+.add-alert-row5 {
+    width: 97%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 30px;
+    padding: 1px 6px 0px 6px;
+    line-height: 42px;
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+    border-radius: 3px;
+}
+
+.row-inside {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.strong-alert-msg {
+    font-weight: bolder;
+}
+
+.msg-alert {
+    font-family: Flama-Basic;
+}
+
+.redirect-buttons {
+    display: flex;
+}
+
+.closebtn {
+    margin-right: 0.2%;
+    color: #000;
+    font-weight: bolder;
+    font-family: Flama-Bold;
+    float: right;
+    font-size: 22px;
+    line-height: 38px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Non-mobile styles, 750px breakpoint */
+
+@media only screen and (min-width: 46.875em) {
+    /* Show the sidenav */
+    .grid-container {
+        grid-template-columns: 240px 1fr;
+        grid-template-areas: "sidenav header" "sidenav main" "sidenav footer";
+    }
+    .header__search {
+        margin-left: 0;
+    }
+    .sidenav {
+        position: fixed;
+        transform: translateX(0);
+    }
+    .sidenav__close-icon {
+        visibility: hidden;
+    }
+}
+
+
+/* Medium screens breakpoint (1050px) */
+
+@media only screen and (min-width: 65.625em) {
+    /* Break out main cards into two columns */
+    .main-cards {
+        column-count: 1;
+    }
+}
+
+
+/*Media Screen For Responsiveness*/
+
+@media only screen and (max-width: 1360px) {
+    #UseridentLabel,
+    .label-budget {
+        width: 100%;
+    }
+    .txt-year,
+    .txt-userident,
+    .txt-from-date,
+    .txt-to-date,
+    .inp-amt-test,
+    .inp-userident {
+        float: left;
+        width: 90%;
+        right: 0%;
+    }
+    .txt-game-level {
+        float: left;
+        width: 90%;
+        right: 0%;
+    }
+    .txt-budtype {
+        float: left;
+        width: 90%;
+    }
+    .txt-period {
+        float: left;
+        width: 92%;
+    }
+    .txt-amount {
+        width: 32%;
+    }
+    .txt-quantity {
+        width: 32%;
+        float: left;
+        margin-left: 2%;
+    }
+    .inp-bud-on {
+        margin-left: 0;
+    }
+    .inp-bud-reg {
+        width: 68%;
+        float: none;
+    }
+    .inp-qty-drive,
+    .txt-quan-drive,
+    .txt-inp-drive,
+    .txt-inp-reg,
+    .txt-inp-quantity {
+        float: left;
+        width: 90%;
+        right: 0%;
+    }
+    .span-game-error {
+        width: 90%;
+        float: left;
+    }
+    .span-game-err {
+        width: 90%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1455px) {
+    .txt-amount {
+        width: 25.3%;
+        margin-left: 1.5%;
+    }
+    .txt-quantity-test {
+        width: 25.7%;
+        margin-left: 25.9%;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    .CardIn {
+        max-width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .txt-amount {
+        margin-left: 1.5%;
+    }
+    .txt-quantity-test {
+        width: 25%;
+        margin-left: 26.3%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .txt-amount {
+        margin-left: 0.7%;
+    }
+    /*    .txt-budtype {
+        margin-left: 7.6%;
+    }*/
+    .txt-amount {
+        width: 25.9%;
+    }
+}
+
+@media only screen and (min-width: 969px) and (max-width: 1256px) {
+    .inp-bud-reg {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 968px) {
+    .inp-bud-reg {
+        margin-top: 10px;
+        width: 92%;
+    }
+    .inp-qty-reg {
+        margin-top: 70px;
+    }
+    .inp-bud-on {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1280px) {
+    /*    .txt-budtype{
+        margin-left: 0%;
+    }
+
+    .txt-budtype{
+        width: 50.5%;
+    }*/
+    .txt-amount {
+        width: 49%;
+        margin-left: 0.15%;
+        margin-top: 10px;
+    }
+    .txt-amount-test {
+        float: left;
+        padding: 7px;
+        width: 43%;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        margin-left: 2.7%;
+        margin-top: 10px;
+    }
+    .txt-quantity {
+        width: 49%;
+        float: left;
+        margin-left: 0%;
+        margin-top: 10px;
+    }
+    .txt-quantity-test {
+        float: right;
+        margin-right: 2%;
+        width: 42.6%;
+    }
+    .txt-amount-test {
+        margin-top: -77px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #mytabledata {
+        border-spacing: 0 0px;
+    }
+    #mytabledata td {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .txt-game-level {
+        width: 90%;
+    }
+    .inp-qty-reg {
+        margin-top: 0;
+    }
+    .h5-view-budget {
+        margin-top: 0;
+    }
+    .txt-inp-reg {
+        width: 90%;
+    }
+    .txt-period{
+        width: 90%;
+    }
+}

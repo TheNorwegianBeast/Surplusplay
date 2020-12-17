@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 1.0);
+    font-family: 'Flama-Medium';
+}
+
+.title {
+    font-family: 'Flama-Basic';
+}
+
+header {
+    background: #cc0000;
+    width: 100%;
+    height: 15px;
+}
+
+footer {
+    background: #333333;
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+}
+
+footer:before {
+    content: "";
+    position: relative;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url('../image/line_image.png');
+    background-repeat: no-repeat;
+    background-position: 2% center;
+    background-size: 100% 100%;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+form {
+    width: 360px;
+    transform: translateY(-3%);
+}
+
+.login-content h2 {
+    margin: 0px 0 25px 0;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.login-content .input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 5px 0 0 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one {
+    margin-top: 0;
+}
+
+.i {
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i i {
+    transition: .3s;
+}
+
+.input-div>div {
+    position: relative;
+    height: 45px;
+}
+
+.input-div>div>h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.input-div:before,
+.input-div:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #cc0000;
+    transition: .4s;
+}
+
+.input-div:before {
+    right: 50%;
+}
+
+.input-div:after {
+    left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+    width: 50%;
+}
+
+.input-div.focus>div>h5 {
+    top: 6px;
+    font-size: 15px;
+}
+
+.input-div.focus>.i>i {
+    color: #cc0000;
+}
+
+.login-content img {
+    height: 120px;
+    width: 130px;   
+/*    border-radius: 50%;
+    border: 2px solid #333;
+    padding: 11px;*/
+}
+
+.img-round {
+    width: 100%;
+    height: 100%;
+}
+
+.input-div>div>input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.8rem 0.7rem 0.5rem 0.7rem;
+    font-size: 1rem;
+    color: #000;
+}
+
+.input-div.pass {
+    margin-bottom: 4px;
+}
+
+.errorspan {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #cc0000;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+
+a {
+    float: right;
+    padding: 11px 0px;
+    font-family: 'Flama-Bold';
+    text-align: right;
+    text-decoration: none;
+    color: #cc0000;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+
+a:hover {
+    color: #333;
+}
+
+.btn {
+    display: block;
+    width: 48%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: #cc0000;
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    transition: .5s;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.btn2 {
+    display: block;
+    width: 48%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: #333;
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    transition: .5s;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: #990000;
+}
+
+.btn2:hover {
+    background: #000;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+input:focus::placeholder {
+    opacity: 1;
+    font-size: 14px;
+}
+
+.eyes {
+    position: absolute;
+    right: 2%;
+    top: 15px;
+    cursor: pointer;
+}
+
+#remove1 {
+    font-size: 17px;
+    color: #333;
+    display: none;
+    padding-top: 4px;
+}
+
+#remove2 {
+    font-size: 17px;
+    color: #cc0000;
+    padding-top: 4px;
+}
+
+#remove3 {
+    font-size: 17px;
+    color: #333;
+    display: none;
+    padding-top: 4px;
+}
+
+#remove4 {
+    font-size: 17px;
+    color: #cc0000;
+    padding-top: 4px;
+}
+
+.alert1 {
+    padding: 7px;
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    border: 1px solid #dff0d8;
+    color: #3c763d;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 1rem;
+    top: 0.5%;
+}
+
+.alert2 {
+    padding: 7px;
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f;
+    border: 1px solid #d9edf7;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 1rem;
+    top: 0.5%;
+}
+
+.alert3 {
+    padding: 7px;
+    background-color: #fcf8e3;
+    border-color: #faf2cc;
+    color: #8a6d3b;
+    border: 1px solid #fcf8e3;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 1rem;
+    top: 0.5%;
+}
+
+.alert4 {
+    padding: 7px;
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+    border: 1px solid #f2dede;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 1rem;
+    top: 0.5%;
+}
+
+.btn-box {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-size: 200%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: #000;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 1800px) {
+    .closebtn {
+        line-height: 20px;
+    }
+    form {
+        width: 500px;
+    }
+    .login-content h2 {
+        margin: 30px 0 25px 0;
+        font-size: 30px;
+    }
+    .alert1,
+    .alert2,
+    .alert3,
+    .alert4 {
+        top: 6%;
+    }
+    .login-content .input-div {
+        position: relative;
+        display: grid;
+        grid-template-columns: 7% 93%;
+        margin: 20px 0 0 0;
+        padding: 5px 0;
+        border-bottom: 2px solid #d9d9d9;
+    }
+    .input-div.focus>div>h5 {
+        top: -5px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .login-content h2{
+        margin: -2px 0 25px 0;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .container {
+        grid-gap: 5rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+        form {
+            width: 360px;
+        }
+        .login-content h2 {
+            font-size: 1rem;
+            margin: 8px 0;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+        .login-content {
+            justify-content: center;
+        }
+        html,
+        body {
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .container {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .login-content {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        html,
+        body {
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .container {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .login-content {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        form {
+            width: 290px;
+            transform: translateY(-4%);
+            height: 75vh;
+        }
+        .alert1,
+        .alert2,
+        .alert3,
+        .alert4 {
+            font-size: 0.9rem;
+            padding: 8px;
+        }
+        .btn, .btn2{
+            width: 49%;
+            font-size: 1rem;
+            height: 40px;
+        }
+    }
+}

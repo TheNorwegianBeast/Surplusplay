@@ -1,0 +1,504 @@
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cccccc; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333333; 
+}
+
+
+
+body{
+    /*height: 100%;*/
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+}
+.division{
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.container{
+    height: 58.5rem;
+    width: 100%;
+    /*background: #fff;*/
+}
+
+
+.header{
+    background: #cc0000;
+    display: flex;
+    height: 2%;
+    width: 100%;
+}
+
+
+
+
+.section{
+    height: 93%;
+    width: 100%;
+    position: relative;
+
+/*    display: flex;*/
+    background: #fff;
+}
+.line-div{
+    background-image: url('../image/line_image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+
+.nav-header{
+    width: 100%;
+    height: 17%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultlist-title{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Flama-Medium;
+    font-size: 2vw;
+}
+
+.resultlist-data{
+    width: 100%;
+    height: 47.5%;
+    position: relative;
+}
+.level-div{
+    width: 95%;
+    height: 8%;
+    margin-left: 3%;
+    margin-bottom: 0.5%;
+    /*background: red;*/
+    position: relative;
+}
+.level-one{
+    height: 100%;
+    width: 25.5%;
+    background: #333333;
+    position: absolute;
+    margin-left: 10.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(-45deg);
+}
+.level-two{
+    height: 100%;
+    width: 25.5%;
+    background: #cc0000;
+    position: absolute;
+    margin-left: 41.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(-45deg);
+}
+.level-three{
+    height: 100%;
+    width: 25.5%;
+    background: #333333;
+    position: absolute;
+    margin-left: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(-45deg);
+}
+.level-txt{
+    color: #fff;
+    font-size: 1vw;
+    font-family: Flama-Basic;
+    transform: skewX(45deg);
+}
+
+.result-city{
+    width: 95%;
+    height: 22%;
+    margin-left: 3%;
+    position: relative;
+}
+.r-bergen-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 8.5%;
+}
+.r-berlin-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 16%;
+}
+.r-milan-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 23.5%;
+}
+.r-istanbul-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 31.3%;
+}
+.r-dubai-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 39.5%;
+}
+.r-taskkent-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 47%;
+}
+.r-islamabad-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 54.5%;
+}
+.r-delhi-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 62%;
+}
+.r-bangkok-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 70%;
+}
+.r-singapore-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 77.5%;
+}
+.r-beijing-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 85.5%;
+}
+.r-tokyo-div{
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 93%;
+}
+
+.r-city-one{
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    left: 22%;
+}
+.r-city-two{
+    width: 65%;
+    height: 70%;
+    position: absolute;
+    left: 20%;
+}
+.r-city-three{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 15%;
+}
+.r-city-four{
+    width: 75%;
+    height: 70%;
+    position: absolute;
+    left: 12%;
+}
+
+
+.r-city-name{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 78%;
+    text-align: center;
+    font-family: Flama-Medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cc0000;
+    font-size: 1vw;
+}
+
+.resultlist-table{
+    width: 95.5%;
+    height: 62%;
+    margin-top: 0.4%;
+    margin-left: 3%;
+    position: relative;
+    overflow: auto;
+}
+.tbl-row{
+    width: 100%;
+    height: 8.5%;
+    margin-bottom: 0.2%;
+    display: flex;
+    position: relative;
+    font-family: Flama-Basic;
+    font-size: 1vw;
+}
+.tbl-user{
+    height: 100%;
+    width: 8%;
+    position: absolute;
+}
+.data-one{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    margin-left: 8.3%;
+    text-align: center;
+}
+.data-two{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 16%;
+    text-align: center;
+}
+.data-three{
+   height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 23.3%;
+    text-align: center; 
+}
+.data-four{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 31.2%;
+    text-align: center;
+}
+.data-five{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 39.5%;
+    text-align: center;
+}
+.data-six{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 47.2%;
+    text-align: center;
+}
+.data-seven{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 54.5%;
+    text-align: center;
+}
+.data-eight{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 62%;
+    text-align: center;
+}
+.data-nine{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 70%;
+    text-align: center;
+}
+.data-ten{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 77.5%;
+    text-align: center;
+}
+.data-eleven{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 85.5%;
+    text-align: center;
+}
+.data-twelve{
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    left: 93%;
+    text-align: center;
+}
+
+.resultlist-img{
+    width: 100%;
+    height: 35%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer{
+    background: #333333;
+    height: 5%;
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+
+
+
+@media only screen and (max-width:1850px){
+    .container{
+        height: 56.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1800px){
+    .container{
+        height: 55rem;
+    }
+
+}
+
+@media only screen and (max-width:1750px){
+    .container{
+        height: 53.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1700px){
+    .container{
+        height: 52rem;
+    }
+
+}
+
+@media only screen and (max-width:1650px){
+    .container{
+        height: 51.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1600px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1550px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1500px){
+    .container{
+        height: 46rem;
+    }
+
+}
+
+@media only screen and (max-width:1450px){
+    .container{
+        height: 44.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1400px){
+    .container{
+        height: 39rem;
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .container{
+        height: 41.5rem;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .container{
+        height: 40rem;
+    }
+}
+@media only screen and (max-width:1250px){
+    .container{
+        height: 38.5rem;
+    }
+}
+@media only screen and (max-width:1200px){
+    .container{
+        height: 37rem;
+    }
+}
+@media only screen and (max-width:1150px){
+    .container{
+        height: 35.5rem;
+    }
+}
+@media only screen and (max-width:1100px){
+    .container{
+        height: 34rem;
+    }
+}
+@media only screen and (max-width:1050px){
+    .container{
+        height: 32.5rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .container{
+        height: 31rem;
+    }
+}
+
+

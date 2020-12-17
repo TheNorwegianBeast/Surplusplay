@@ -1,0 +1,306 @@
+
+
+body{
+    /*height: 100%;*/
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+}
+.division{
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.container{
+    height: 58.5rem;
+    width: 100%;
+    background: #fff;
+}
+
+
+.header{
+    background: #cc0000;
+    display: flex;
+    height: 2%;
+    width: 100%;
+}
+
+.dash-section{
+    height: 93.5%;
+    width: 100%;
+    position: relative;
+}
+.line-div{
+    background-image: url('../image/line_image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+
+.nav-header{
+    width: 100%;
+    height: 17%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    width: 100%;
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-row{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-section{
+    width: 35%;
+    height: 95%;
+}
+
+.porsche-page{
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+.user-profile-label{
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+    text-align: center;
+    font-family: Flama-Medium;
+    font-size: 2vw;
+}
+
+.profile_details{
+    width: 100%;
+    height: 95%;
+    font-family: Flama-Basic;
+    font-size: 1.2vw;
+    text-align: left;
+    margin-top: 4%;
+    position: relative;
+}
+.game-row{
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-lbl{
+    position: absolute;
+    left: 0%;
+}
+.select-game{
+    height: 90%;
+    width: 60%;
+    position: absolute;
+    right: 0%;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-family: Flama-Basic;
+    font-size: 1.2vw;
+    outline: none;
+    background: transparent;
+}
+
+.login-row{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userident-row{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-name-row{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last-name-row{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-row{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.role-row{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer{
+    background: #333333;
+    height: 5%;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width:1850px){
+    .container{
+        height: 56.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1800px){
+    .container{
+        height: 55rem;
+    }
+
+}
+
+@media only screen and (max-width:1750px){
+    .container{
+        height: 53.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1700px){
+    .container{
+        height: 52rem;
+    }
+
+}
+
+@media only screen and (max-width:1650px){
+    .container{
+        height: 51.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1600px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1550px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1500px){
+    .container{
+        height: 46rem;
+    }
+
+}
+
+@media only screen and (max-width:1450px){
+    .container{
+        height: 44.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1400px){
+    .container{
+        height: 39rem;
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .container{
+        height: 41.5rem;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .container{
+        height: 40rem;
+    }
+}
+@media only screen and (max-width:1250px){
+    .container{
+        height: 38.5rem;
+    }
+}
+@media only screen and (max-width:1200px){
+    .container{
+        height: 37rem;
+    }
+}
+@media only screen and (max-width:1150px){
+    .container{
+        height: 35.5rem;
+    }
+}
+@media only screen and (max-width:1100px){
+    .container{
+        height: 34rem;
+    }
+}
+@media only screen and (max-width:1050px){
+    .container{
+        height: 32.5rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .container{
+        height: 31rem;
+    }
+}
+
+

@@ -1,0 +1,283 @@
+@media only screen and (max-width:1650px){
+    .container{
+        height: 900px; background: #000;
+    }
+
+    .header{
+        background: #cc0000;
+        display: flex;
+        height: 18px;
+    }
+    .navigation{
+        /*background: lightblue;*/
+        height: 150px;
+    }
+
+    .section{
+        /*background: yellow;*/
+        height: 690px;
+    }
+    .footer{
+        background: #333333;
+        height: 42px;
+    }
+
+    .container{
+        height: 625px; 
+    }
+    .navigation{
+        height: 103px;
+        background: #fff;
+    }
+    .section{
+        height: 462px;
+    }
+
+    /*css For left Mapping Part section starts here*/
+    #img-map1-div1 {
+        width: 102%;
+        height: 100%;
+        background-color: transparent;
+        background-image: url('../../../asset/image/map/Left-Part-Map.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+    }
+
+    #img-map1-div1:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #fff;
+        opacity: 0.6;
+    }
+
+    /*css for central map partition*/
+    #img-map2-div2_wrapper {
+        width: 100%;
+        height: 93.5%;
+        background-color: transparent;
+        background-image: url('../../../asset/image/map/MapLevel2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 15px;
+        position: relative;
+        border-left: 4px dashed red;
+        border-right: 4px dashed red;
+    }
+
+    #mapcontainer {
+        width: 100%;
+        height: 100%;    
+        position: relative;
+    }
+
+    #box1 {
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        left: 12%;
+        top: 10%;
+        z-index: 1;
+    }
+
+
+    .bergen-icon {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    #box2 {
+        width: 16%;
+        height: 20%;
+        position: absolute;
+        top: 37%;
+        left: 19%;
+        z-index: 1;
+    }
+
+    .berlin-icon {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .arrow-area {
+        width: 93.5%;
+        height: 37%;
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
+
+    .top-arrow {
+        width: 10%;
+        height: 95%;
+    }
+
+    .innerbox {
+        width: 40%;
+        height: 15%;
+        position: absolute;
+        left: 26%;
+        bottom: 27%;
+    }
+
+    .center-arrow {
+        width: 20%;
+        height: 100%;
+    }
+
+    .milan-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    #box3 {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        bottom: 15%;
+        left: 6%;
+        cursor: pointer;
+    }
+
+    .milan2istanbul {
+        width: 40%;
+        height: 12%;
+        position: absolute;
+        bottom: 10%;
+        left: 25%;
+    }
+
+    .bottom-arrow {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box4 {
+        width: 21%;
+        height: 20%;
+        position: absolute;
+        bottom: 15%;
+        right: 16%;
+        cursor: pointer;
+    }
+
+    .istanbul-icon {
+        width: 100%;
+        height: 100%;
+    }   
+
+    /*ends css for central map partition*/
+
+    /*css for right map partition*/
+    #ImgMap3Div3 {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        background-image: url('../../../asset/image/map/Right-Half.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        border-left: 4px dashed red;
+    }
+
+    #ImgMap3Div3:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.5;
+        position: absolute;
+    }
+
+
+    #RowMap {
+        width: 100%;
+        height: 24%;
+        position: absolute;
+        bottom: 8%;
+        text-align: center;
+        opacity: none;
+        /*background: #566;*/
+    }
+
+    #col_Half_Map {
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        background-image: url('../../../asset/image/map/Mini-Map.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 27%;
+        z-index: 1;
+    }
+
+    .Mini_box {
+        width: 39px;
+        height: 26px;
+        border: 3px solid #cc0000;
+        position: absolute;
+        left: 45%;
+        top: 24%;
+    }
+
+    /*Right Map Ends*/
+
+
+    /*----css For Buttons-*/
+    .Nxtlvlbtn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 10px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cccccc;
+        color: #fff;
+        left: 23%;
+        top: 5%;
+    }
+
+    .NxtlvlbtnActive {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 10px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 23%;
+        top: 5%;
+    }
+
+    .bcklvl-btn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 10px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 12%;
+        top: 5%;
+    }
+    /*Ends css for right map partition*/
+
+}

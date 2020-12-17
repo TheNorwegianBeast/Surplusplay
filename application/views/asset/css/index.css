@@ -1,0 +1,427 @@
+
+
+body{
+    /*height: 100%;*/
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+}
+.division{
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.container{
+    height: 58.5rem;
+    width: 100%;
+    background: #fff;
+}
+
+.error-row {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    font-size: 1vw;
+    font-family: Flama-Basic;
+}
+
+.header{
+    background: #cc0000;
+    display: flex;
+    height: 2%;
+    width: 100%;
+}
+
+.dash-section{
+    height: 93.5%;
+    width: 100%;
+    position: relative;
+}
+.line-div{
+    background-image: url('../../app/asset/image/line_image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.left-side{
+    width: 50%;
+    height: 100%;
+}
+.right-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section{
+    height: 60%;
+    width: 70%;
+    position: relative;
+    /*background: #676;*/
+}
+.logo-row{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-div{
+    height: 100%;
+    width: 17%;
+}
+
+.user-row{
+    width: 100%;
+    height: 13%; 
+    position: absolute;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-input{
+    height: 100%;
+    width: 80%;
+    font-size: 1vw;
+    /*border: 1px solid #cc0000;*/
+    font-family: Flama-Basic;
+}
+
+.email-verify-row{
+    width: 100%;
+    height: 5%;
+    top: 39%;
+    /*background: #362;*/
+    position: absolute;
+}
+
+.password-verify-row{
+    width: 100%;
+    height: 5%;
+    top: 60%;
+    /*    background: #362;*/
+    position: absolute;
+}
+.email-correct{
+    width: 50%;
+    height: 100%;
+    /*background: #674;*/
+    position: absolute;
+    left: 10%;
+    font-family: Flama-Basic;
+    font-size: 1vw;
+    color: green;
+    display: block;
+
+}
+.email-incorrect{
+    width: 70%;
+    height: 100%;
+    /*background: #674;*/
+    position: absolute;
+    left: 10%;
+    font-family: Flama-Basic;
+    font-size: 1vw;
+    color: #cc0000;
+    display: none;
+
+}
+.pass-correct{
+    width: 50%;
+    height: 100%;
+    /*background: #674;*/
+    position: absolute;
+    left: 10%;
+    font-family: Flama-Basic;
+    font-size: 1vw;
+    color: green;
+    display: none; 
+}
+.pass-incorrect{
+    width: 50%;
+    height: 100%;
+    /*background: #674;*/
+    position: absolute;
+    left: 10%;
+    font-family: Flama-Basic;
+    font-size: 1vw;
+    color: #cc0000;
+    display: block;
+
+}
+
+.correct-icon{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+.opt-match{
+    position: absolute;
+    left: 15%; 
+}
+.not-match{
+    position: absolute;
+    left: 15%;
+}
+
+.pass-row{
+    width: 100%;
+    height: 13%; 
+    position: absolute;
+    top: 46%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot-row{
+    width: 100%;
+    height: 10%; 
+    position: absolute;
+    top: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cc0000;
+    font-size: 1vw;
+    font-family: Flama-Basic;
+}
+
+.forgot-row > a{
+    text-decoration: none;  
+    color: #cc0000;
+    font-family: Flama-Medium;
+}
+
+.submit-row{
+    width: 100%;
+    height: 13%; 
+    position: absolute;
+    top: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-btn{
+    height: 80%;
+    width: 60%;
+    border: 1px solid #333333;
+    font-size: 1.5vw;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    z-index: 20;
+    /*transition: 0.3s;*/
+}
+.login-btn:hover {
+    background: #cc0000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.user-row:after{
+    content: "";
+    position: relative;
+}
+
+#inputuser{
+    position: absolute;
+    left: 12%;
+}
+
+.pass-row:before {
+    content: '';
+    position: relative;
+}
+
+.eyes {
+    position: absolute;
+    right: 12%;
+    top: 40%;
+    cursor: pointer;
+}
+
+#remove1{
+    position: absolute;
+    right: 12%;
+    display: none;
+    cursor: pointer;
+}
+
+#remove2{
+    position: absolute;
+    right: 12%;
+    cursor: pointer;
+}
+
+.user-input{
+    height: 100%;
+    width: 80%;
+    font-size: 1vw;
+    /*border: 1px solid #cc0000;*/
+    font-family: Flama-Basic;
+    padding-left: 35px;
+    outline: none;
+}
+
+
+.footer{
+    background: #333333;
+    height: 5%;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width:1850px){
+    .container{
+        height: 56.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1800px){
+    .container{
+        height: 55rem;
+    }
+
+}
+
+@media only screen and (max-width:1750px){
+    .container{
+        height: 53.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1700px){
+    .container{
+        height: 52rem;
+    }
+
+}
+
+@media only screen and (max-width:1650px){
+    .container{
+        height: 51.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1600px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1550px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1500px){
+    .container{
+        height: 46rem;
+    }
+
+}
+
+@media only screen and (max-width:1450px){
+    .container{
+        height: 44.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1400px){
+    .container{
+        height: 39rem;
+    }
+    .opt-match {
+        position: absolute;
+        left: 15%;
+        transform: translate(-20%, 20%);
+    }
+    .not-match{
+        transform: translate(-18%, 20%);
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .container{
+        height: 41.5rem;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .container{
+        height: 40rem;
+    }
+}
+@media only screen and (max-width:1250px){
+    .container{
+        height: 38.5rem;
+    }
+}
+@media only screen and (max-width:1200px){
+    .container{
+        height: 37rem;
+    }
+}
+@media only screen and (max-width:1150px){
+    .container{
+        height: 35.5rem;
+    }
+}
+@media only screen and (max-width:1100px){
+    .container{
+        height: 34rem;
+    }
+}
+@media only screen and (max-width:1050px){
+    .container{
+        height: 32.5rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .container{
+        height: 31rem;
+    }
+
+    .eyes {
+        position: absolute;
+        right: 12%;
+        top: 8px;
+        cursor: pointer;
+    }
+}
+
+
+
+

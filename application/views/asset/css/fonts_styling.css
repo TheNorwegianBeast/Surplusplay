@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Flama-Bold";
+    src: url('../font/Flama-Bold.otf');
+}
+@font-face {
+    font-family: "Flama-Medium";
+    src: url('../font/Flama-Medium.otf');
+}
+@font-face {
+    font-family: "Flama-Light";
+    src: url('../font/Flama-Light.otf');
+}
+@font-face {
+    font-family: "Flama-Basic";
+    src: url('../font/Flama-Basic.otf');
+}
+

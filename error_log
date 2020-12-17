@@ -1,0 +1,8 @@
+[29-Jul-2020 02:24:05 Asia/Calcutta] PHP Fatal error:  Call to a member function real_escape_string() on boolean in /home/i0pcskdl4fky/public_html/ssp_porsche/system/database/drivers/mysqli/mysqli_driver.php on line 393
+[29-Jul-2020 02:24:05 Asia/Calcutta] PHP Fatal error:  Call to a member function result() on boolean in /home/i0pcskdl4fky/public_html/ssp_porsche/application/models/app_model/Resultlist_knowledge_model.php on line 271
+[29-Jul-2020 02:24:05 Asia/Calcutta] PHP Fatal error:  Call to a member function result() on boolean in /home/i0pcskdl4fky/public_html/ssp_porsche/application/models/app_model/Notification_model.php on line 298
+[29-Jul-2020 02:24:05 Asia/Calcutta] PHP Fatal error:  Call to a member function result() on boolean in /home/i0pcskdl4fky/public_html/ssp_porsche/application/models/app_model/Resultlist_knowledge_model.php on line 271
+[29-Jul-2020 02:24:06 Asia/Calcutta] PHP Fatal error:  Call to a member function result() on boolean in /home/i0pcskdl4fky/public_html/ssp_porsche/application/models/app_model/Resultlist_knowledge_model.php on line 271
+[29-Jul-2020 02:24:06 Asia/Calcutta] PHP Fatal error:  Call to a member function result() on boolean in /home/i0pcskdl4fky/public_html/ssp_porsche/application/models/app_model/Email_knowledge_model.php on line 21
+[29-Jul-2020 02:24:06 Asia/Calcutta] PHP Fatal error:  Call to a member function real_escape_string() on boolean in /home/i0pcskdl4fky/public_html/ssp_porsche/system/database/drivers/mysqli/mysqli_driver.php on line 393
+[29-Jul-2020 02:24:06 Asia/Calcutta] PHP Fatal error:  Call to a member function result() on boolean in /home/i0pcskdl4fky/public_html/ssp_porsche/application/models/app_model/Resultlist_knowledge_model.php on line 271

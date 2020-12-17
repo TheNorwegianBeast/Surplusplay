@@ -1,0 +1,3 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2020-07-08 00:00:01 --> Not Found: email_notification/Email_new_scoreboard_dailly/index

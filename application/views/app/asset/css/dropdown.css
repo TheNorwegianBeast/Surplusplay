@@ -1,0 +1,226 @@
+.drop-down{
+    height: 130%;
+    width: 10%;
+    left: 72.5%;
+    top: 50%;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    color: #fff;
+    font-family: Flama-Light;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.list-test-div{
+    width: 90%;
+    height: 18%;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5%;
+    /*background: green;*/
+}
+
+
+.list-sales-div{
+    width: 90%;
+    height: 18%;
+    margin-top: 28%;
+    margin-left: 5%;
+    position: absolute;
+    /*background: green;*/
+}
+.list-know-div{
+    width: 90%;
+    height: 18%;
+    margin-top: 51%;
+    margin-left: 5%;
+    position: absolute;
+    /*background: green;*/
+}
+.list-score-div{
+    width: 90%;
+    height: 18%;
+    margin-top: 75%;
+    margin-left: 5%;
+    position: absolute;
+    /*background: green;*/
+}
+
+.test-result-l{
+    width: 70%;
+    height: 70%;
+    margin-top: 3%;
+    background: #333333;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 0.9vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-text{
+    cursor: pointer;
+}
+
+.test-result-img{
+    height: 100%;
+    width: 20%;
+    margin-left: 80%;
+    /*background: lightcoral;*/
+    position: absolute;
+    
+}
+.sales-result-l{
+    width: 70%;
+    height: 70%;
+    margin-top: 3%;
+    background: #333333;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 0.9vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sales-result-img{
+    height: 100%;
+    width: 20%;
+    margin-left: 80%;
+    /*background: lightcoral;*/
+    position: absolute;
+}
+.know-result-l{
+    width: 70%;
+    height: 70%;
+    margin-top: 3%;
+    background: #333333;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 0.9vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.know-result-img{
+    height: 100%;
+    width: 20%;
+    margin-left: 80%;
+    /*background: lightcoral;*/
+    position: absolute;
+}
+.score-result-l{
+    width: 70%;
+    height: 70%;
+    margin-top: 3%;
+    background: #333333;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 0.9vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score-result-img{
+    height: 100%;
+    width: 20%;
+    margin-left: 80%;
+    /*background: lightcoral;*/
+    position: absolute;
+}
+.test-off{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.test-on{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sale-off{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.sale-on{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.know-off{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.know-on{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.score-off{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.score-on{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*Hover on resultlist dropdown*/
+.Test_label:hover #Test_Label {
+    background-color: #cc0000;
+    transition: 0.3s
+}
+
+.list-test-div:hover .test-result-l{
+    background-color: #cc0000;
+}
+
+.list-sales-div:hover .sales-result-l{
+    background-color: #cc0000;
+}
+.list-know-div:hover .know-result-l{
+    background-color: #cc0000;
+}
+
+.list-score-div:hover .score-result-l{
+    background-color: #cc0000;
+}
+
+
+.test-on, .list-test-div:hover .test-off {
+    display: none;
+}
+.test-off, .list-test-div:hover .test-on {
+    display: block;
+}
+
+.sale-on, .list-sales-div:hover .sale-off {
+    display: none;
+}
+.sale-off, .list-sales-div:hover .sale-on {
+    display: block;
+}
+
+.know-on, .list-know-div:hover .know-off {
+    display: none;
+}
+.know-off, .list-know-div:hover .know-on {
+    display: block;
+}
+
+.score-on, .list-score-div:hover .score-off {
+    display: none;
+}
+.score-off, .list-score-div:hover .score-on {
+    display: block;
+}

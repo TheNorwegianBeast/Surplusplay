@@ -1,0 +1,93 @@
+.add-div-row {
+    width: 10%;
+    height: 40px;
+    background-color: transparent;
+    margin-left: 2%;
+    margin-top: 30px;
+}
+
+.h6-add-game {
+    font-size: 17px;
+    margin-top: 10px;
+    color: #000;
+    white-space: nowrap;
+}
+
+.hr-line {
+    width:50%; 
+    float: left;
+    margin-top: -27px;
+    border-top: 0.62px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-div-row2{
+    width: 81.5%;
+    height: 40px;
+    margin-left: 4.6%;
+    margin-top: 30px;
+    padding: 1px 6px 0px 6px;
+    line-height: 42px;
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+}
+
+.add-div-row3{
+    width: 81.5%;
+    height: 40px;
+    margin-left: 4.6%;
+    margin-top: 30px;
+    padding: 1px 6px 0px 6px;
+    line-height: 42px;
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f;
+}
+
+.add-div-row4{
+    width: 81.5%;
+    height: 40px;
+    margin-left: 4.6%;
+    margin-top: 30px;
+    padding: 1px 6px 0px 6px;
+    line-height: 42px;
+    background-color: #fcf8e3;
+    border-color: #faf2cc;
+    color: #8a6d3b;
+}
+
+.add-div-row5{
+    width: 81.5%;
+    height: 40px;
+    margin-left: 4.6%;
+    margin-top: 30px;
+    padding: 1px 6px 0px 6px;
+    line-height: 42px;
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+}
+
+.row-inside{
+    width: 100%;display: flex;
+}
+
+.strong-alert-msg{
+    font-weight: bolder;
+}
+
+.msg-alert{
+    font-family: Flama-Basic;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: #000;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 38px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+

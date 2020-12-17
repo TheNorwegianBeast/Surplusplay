@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #b63b4d;
+    text-decoration: none;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 250px;
+    background: #333333;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 12px 15px 15px 42px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 13px;
+}
+
+.accordion li.open .link {
+    color: #f2ca82;
+}
+
+.accordion li.open i {
+    color: #f2ca82;
+}
+
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.submenu {
+    display: none;
+    background: #090d10;
+    font-size: 14px;
+}
+
+.submenu li {
+    font-weight: bold;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 12px;
+    padding-left: 62px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    font-family: Flama-Light;
+}
+
+.submenu a:hover {
+    /*background: #474e54;*/
+    color: #fff;
+}
+
+.sidenav-logo {
+    width: 250px;
+    height: 150px;
+    background: #263544;
+    padding: 20px 39px;
+}
+
+h1::before {
+    content: url(smiley.gif);
+}
+
+.list01::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f53f";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list02::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f11b";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list03::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f012";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list04::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f012";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list05::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f11e";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list06::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f11e";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list07::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f234";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list08::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c0";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list09::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list10::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f658";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list11::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f53d";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list12::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f07a";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list13::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f084";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+.list14::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f007";
+    font-weight: 900;
+    position: absolute;
+    left: 6%;
+    padding-top: 15px;
+    padding-left: 27px;
+    color: #fff;
+}
+
+
+/* .list01:hover::before {
+    color: #7386d5;
+} */
+
+.list01:hover::before,
+.list02:hover::before,
+.list03:hover::before,
+.list04:hover::before,
+.list05:hover::before,
+.list06:hover::before,
+.list07:hover::before,
+.list08:hover::before,
+.list09:hover::before,
+.list10:hover::before,
+.list11:hover::before,
+.list12:hover::before,
+.list13:hover::before,
+.list14:hover::before {
+    color: #fff;
+    font-weight: 9000;
+}
+
+
+/* .list03:hover::before {
+    color: #000;
+}
+
+.list04:hover::before {
+    color: #000;
+}
+
+.list05:hover::before {
+    color: #000;
+}
+
+.list06:hover::before {
+    color: #000;
+}
+
+.list07:hover::before {
+    color: #000;
+}
+
+.list08:hover::before {
+    color: #000;
+}
+
+.list09:hover::before {
+    color: #000;
+}
+
+.list10:hover::before {
+    color: #000;
+}
+
+.list11:hover::before {
+    color: #000;
+}
+
+.list12:hover::before {
+    color: #000;
+}
+
+.list13:hover::before {
+    color: #000;
+}
+
+.list14:hover::before {
+    color: #000;
+} */
+
+.sidenav__close-icon {
+    position: absolute;
+    visibility: visible;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ddd;
+}
+
+.sidenav {
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    overflow-y: auto;
+    transform: translateX(-245px);
+    transition: ease-in 0.4s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    z-index: 20;
+    background-color: #090d10;
+    overflow: hidden;
+}

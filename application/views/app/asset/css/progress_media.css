@@ -1,0 +1,1222 @@
+
+.sales-div{
+    height: 28%;
+    width: 15%;
+    /*background: lightblue;*/
+    position: absolute;
+    margin-top: 150px;
+    position: absolute;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid red;*/
+}
+.mission-div{
+   height: 28%;
+    width: 20%;
+    /*background: #854;*/
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test-div{
+   height: 28%;
+    width: 15%;
+    /*background: lightblue;*/
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Left Progress Bar Start */
+.left-outer-svg {
+    height: 11.5rem;
+    width: 14.5rem;
+    position: absolute;
+    /*border: 1px solid red;*/
+}
+
+.left-outer-ellipse {
+    cx: 50%;
+    cy: 50%;
+    rx: 46%;
+    ry: 46%;
+    stroke: #A7ABAC;
+    fill: "";
+    stroke-width: 3;
+}
+
+#left-svg-progress {
+    height: 10rem;
+    width: 13rem;
+    padding: 4%;
+    position: absolute;
+    /*border: 1px solid green;*/
+}
+
+.circular-chart-left {
+    display: block;
+}
+
+.left-percentage {
+    font-size: 8px;
+    font-family: Flama-Light;
+    text-anchor: middle;
+    stroke-width: 0.4;
+    stroke: #ffffff;
+    fill: #ffffff;
+}
+
+
+.bg-circle {
+    fill: none;
+    stroke: #A7ABAC;
+    stroke-width: 1;
+    height: 70%;
+    width: 100%;
+}
+
+.progress-path {
+    fill: none;
+    stroke-width: 2.4;
+    stroke-linecap: butt;
+    transform-origin: center;
+    animation: progress 1s ease-out forwards;
+}
+
+/* Left Progress Bar End */
+
+
+/* Middle Progress Bar Start */
+.middle-outer-svg {
+    height: 15rem;
+    width: 19rem;
+    position: absolute;
+    /*border: 1px solid red;*/
+}
+
+.middle-outer-ellipse {
+    cx: 51.5%;
+    cy: 50%;
+    rx: 46%;
+    ry: 46%;
+    fill: #020202;
+    stroke: #A7ABAC;
+    stroke-width: 6;
+}
+
+#middle-svg-progress {
+    height: 13rem;
+    width: 17rem;
+    padding: 4%;
+    position: absolute;
+    /*border: 1px solid green;*/
+}
+
+.circular-chart_middle {
+    display: block;
+}
+
+.middle-percent {
+    font-size: 7px;
+    font-family: Flama-Light;
+    text-anchor: middle;
+    stroke-width: 0.4;
+    stroke: #ffffff;
+    fill: #ffffff;
+}
+
+.dotted-ellipse {
+    cx: 52%;
+    cy: 50%;
+    rx: 49%;
+    ry: 36%;
+    fill: #020202;
+    stroke: #CBCBCB;
+    stroke-width: 0.2;
+    stroke-dasharray: 0.5, 0.5;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #A7ABAC;
+    stroke-width: 1;
+    height: 70%;
+    width: 100%;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.4;
+    stroke-linecap: butt;
+    transform-origin: center;
+    animation: progress 1s ease-out forwards;
+
+}
+
+
+/* Middle Progress Bar End */
+
+/* Right Progress Bar Start */
+.right-outer-svg {
+    height: 11.5rem;
+    width: 14.5rem;
+    position: absolute;
+    /*border: 1px solid red;*/
+}
+
+.right-outer-ellipse {
+    cx: 49.5%;
+    cy: 50%;
+    rx: 46%;
+    ry: 46%;
+    stroke: #A7ABAC;
+    stroke-width: 3;
+}
+
+#right-svg-progress {
+    height: 10rem;
+    width: 13rem;
+    padding: 4%;
+    position: absolute;
+    /*border: 1px solid green;*/
+}
+
+.circular-chart-right {
+    display: block;
+}
+
+.right-percentage {
+    font-size: 8px;
+    font-family: Flama-Light;
+    text-anchor: middle;
+    stroke-width: 0.4;
+    stroke: #ffffff;
+    fill: #ffffff;
+}
+
+.circle-bg3 {
+    fill: none;
+    stroke: #A7ABAC;
+    stroke-width: 1;
+    height: 70%;
+    width: 100%;
+}
+
+.circle3 {
+    fill: none;
+    stroke-width: 2.4;
+    stroke-linecap: butt;
+    transform-origin: center;
+    animation: progress 1s ease-out forwards;
+}
+
+
+/* Right Progress Bar End */
+
+#sale-progress-label {
+    font-size: 1.5em;
+    font-family: Flama-Light;
+    color: #fff;
+    margin-top: 44%;
+    position: absolute;
+    z-index: 1;
+}
+
+#mission-progress-label {
+    font-size: 1.5em;
+    font-family: Flama-Light;
+    color: #fff;
+    margin-top: 36%;
+    margin-left: 3%;
+    position: absolute;
+    z-index: 1;
+}
+
+#test-progress-label {
+    font-size: 1.5em;
+    font-family: Flama-Light;
+    color: #fff;
+    margin-top: 44%;
+    position: absolute;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+
+
+/* Media queries for 1920 screen other desktop screen */
+@media only screen and (max-width: 1800px) {
+    .sales-div{
+       margin-top: 140px; 
+    }
+    .mission-div{
+       margin-top: 140px; 
+    }
+    .test-div{
+       margin-top: 140px; 
+    }
+    
+    
+    .left-outer-svg {
+        height: 11em;
+        width: 14em;
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 45%;
+        ry: 46%;
+    }
+
+    #left-svg-progress {
+        height: 9.5em;
+        width: 12.5em;
+    }
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 14.5em;
+        width: 18.5em;
+        position: absolute;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.4%;
+        cy: 50%;
+        rx: 46%;
+        ry: 46%;
+        fill: #020202;
+        stroke: #A7ABAC;
+        stroke-width: 6;
+    }
+
+    #middle-svg-progress {
+        height: 12.5em;
+        width: 16.5em;
+        position: absolute;
+    }
+
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 11em;
+        width: 14.0em;
+        position: absolute;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 46%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        stroke-width: 3;
+    }
+
+    #right-svg-progress {
+        height: 9.5em;
+        width: 12.5em;
+        position: absolute;
+    }
+
+
+
+
+    #sale-progress-label {
+        margin-top: 47%;
+        font-size: 1.3em;
+    }
+
+    #mission-progress-label {
+        margin-top: 36%;
+        font-size: 1.3em;
+    }
+
+    #test-progress-label {
+        margin-top: 47%;
+        font-size: 1.3em;
+
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    
+    .sales-div{
+       margin-top: 130px; 
+    }
+    .mission-div{
+       margin-top: 130px; 
+    }
+    .test-div{
+       margin-top: 130px; 
+    }
+
+    /* Left Progress Bar Start */
+    .left-outer-svg {
+        height: 9.8em;
+        width: 12.5em;
+        position: absolute;
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 46%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        fill: "";
+        stroke-width: 3;
+    }
+
+    #left-svg-progress {
+        height: 8.5em;
+        width: 11.5em;
+        position: absolute;
+
+    }
+
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 13em;
+        width: 17.0em;
+        position: absolute;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.8%;
+        cy: 50%;
+        rx: 46%;
+        ry: 47%;
+        fill: #020202;
+        stroke: #A7ABAC;
+        stroke-width: 6;
+    }
+
+    #middle-svg-progress {
+        height: 11.5em;
+        width: 15.0em;
+        position: absolute;
+    }
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 10em;
+        width: 12.5em;
+        position: absolute;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 47%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        stroke-width: 3;
+    }
+
+    #right-svg-progress {
+        height: 8.5em;
+        width: 11.5em;
+        position: absolute;
+    }
+
+
+
+
+    #sale-progress-label {
+        margin-top: 45%;
+    }
+
+    #mission-progress-label {
+        margin-top: 36%;
+    }
+
+    #test-progress-label {
+        margin-top: 45%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .sales-div{
+       margin-top: 130px; 
+    }
+    .mission-div{
+       margin-top: 130px; 
+    }
+    .test-div{
+       margin-top: 130px; 
+    }
+    
+    /* Left Progress Bar Start */
+    .left-outer-svg {
+        height: 9.5em;
+        width: 12em;
+        position: absolute;
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 47%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        fill: "";
+        stroke-width: 3;
+    }
+
+    #left-svg-progress {
+        height: 8em;
+        width: 11em;
+    }
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 12.7em;
+        width: 16em;
+        position: absolute;
+
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.8%;
+        cy: 50%;
+        rx: 46%;
+        ry: 46%;
+        fill: #020202;
+        stroke: #A7ABAC;
+        stroke-width: 6;
+    }
+
+    #middle-svg-progress {
+        height: 11em;
+        width: 14.5em;
+        position: absolute;
+    }
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 9.5em;
+        width: 12em;
+        position: absolute;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 46%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        stroke-width: 3;
+    }
+
+    #right-svg-progress {
+        height: 8em;
+        width: 11em;
+        position: absolute;
+    }
+
+    #sale-progress-label {
+        margin-top: 45%;
+        font-size: 1.25em;
+    }
+
+    #mission-progress-label {
+        margin-top: 36%;
+        font-size: 1.25em;
+    }
+
+    #test-progress-label {
+        margin-top: 45%;
+        font-size: 1.25em;
+
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .sales-div{
+       margin-top: 125px; 
+    }
+    .mission-div{
+       margin-top: 125px; 
+    }
+    .test-div{
+       margin-top: 125px; 
+    }
+    
+    /* Left Progress Bar Start */
+    .left-outer-svg {
+        height: 9em;
+        width: 11.5em;
+        position: absolute;
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 46%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        fill: "";
+        stroke-width: 3;
+    }
+
+    #left-svg-progress {
+        height: 7.5em;
+        width: 10.5em;
+        position: absolute;
+    }
+
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 12.5em;
+        width: 16.0em;
+        position: absolute;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.8%;
+        cy: 50%;
+        rx: 46%;
+        ry: 46%;
+        fill: #020202;
+        stroke: #A7ABAC;
+        stroke-width: 5;
+    }
+
+    #middle-svg-progress {
+        height: 10.5em;
+        width: 14.0em;
+        position: absolute;
+    }
+    /* Middle Progress Bar End */
+
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 9em;
+        width: 12em;
+        position: absolute;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 44%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        stroke-width: 3;
+    }
+
+    #right-svg-progress {
+        height: 7.5em;
+        width: 10.5em;
+        position: absolute;
+    }
+
+    #sale-progress-label {
+        margin-top: 47%;
+    }
+
+    #mission-progress-label {
+        margin-top: 37%;
+    }
+
+    #test-progress-label {
+        margin-top: 47%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .sales-div{
+       margin-top: 115px; 
+    }
+    .mission-div{
+       margin-top: 115px; 
+    }
+    .test-div{
+       margin-top: 115px; 
+    }
+    
+    
+    /* Left Progress Bar Start */
+    .left-outer-svg {
+        height: 8.5em;
+        width: 11em;
+        position: absolute;
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 44%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        fill: "";
+        stroke-width: 3;
+    }
+
+    #left-svg-progress {
+        height: 7em;
+        width: 10em;
+        position: absolute;
+    }
+
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 11.5em;
+        width: 15em;
+        position: absolute;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.8%;
+        cy: 50%;
+        rx: 46%;
+        ry: 46%;
+        fill: #020202;
+        stroke: #A7ABAC;
+        stroke-width: 4.5;
+    }
+
+    #middle-svg-progress {
+        height: 10em;
+        width: 13.5em;
+        position: absolute;
+    }
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 8.5em;
+        width: 11em;
+        position: absolute;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 45%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        stroke-width: 3;
+    }
+
+    #right-svg-progress {
+        height: 7em;
+        width: 10em;
+        position: absolute;
+
+    }
+
+    #sale-progress-label {
+        margin-top: 47%;
+    }
+
+    #mission-progress-label {
+        margin-top: 38%;
+    }
+
+    #test-progress-label {
+        margin-top: 47%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .sales-div{
+       margin-top: 105px; 
+    }
+    .mission-div{
+       margin-top: 105px; 
+    }
+    .test-div{
+       margin-top: 105px; 
+    }
+    
+    
+    /* Left Progress Bar Start */
+    .left-outer-svg {
+        height: 8em;
+        width: 10em;
+
+        position: absolute;
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 46%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        fill: "";
+        stroke-width: 3;
+    }
+
+    #left-svg-progress {
+        height: 6.5em;
+        width: 9.5em;
+        position: absolute;
+    }
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 10em;
+        width: 13.5em;
+        position: absolute;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.8%;
+        cy: 50%;
+        rx: 44%;
+        ry: 46%;
+        fill: #020202;
+        stroke: #A7ABAC;
+        stroke-width: 4.5;
+    }
+
+    #middle-svg-progress {
+        height: 8.5em;
+        width: 12.0em;
+        position: absolute;
+    }
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 8em;
+        width: 10.5em;
+        position: absolute;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 44%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        stroke-width: 3;
+    }
+
+    #right-svg-progress {
+        height: 6.5em;
+        width: 9.5em;
+        position: absolute;
+    }
+
+    #sale-progress-label {
+        margin-top: 47%;
+        font-size: 1.2em;
+    }
+
+    #mission-progress-label {
+        margin-top: 38%;
+        font-size: 1.2em;
+    }
+
+    #test-progress-label {
+        margin-top: 47%;
+        font-size: 1.2em;
+
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    /* Left Progress Bar Start */
+    .left-outer-svg {
+        height: 8em;
+        width: 10.5em;
+        position: absolute;
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 44%;
+        ry: 46%;
+        stroke: #A7ABAC;
+        fill: "";
+        stroke-width: 3;
+    }
+
+    #left-svg-progress {
+        height: 6.5em;
+        width: 9.5em;
+        position: absolute;
+    }
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 9.5em;
+        width: 13em;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.8%;
+        cy: 50%;
+        rx: 43%;
+        ry: 46%;
+    }
+
+    #middle-svg-progress {
+        height: 8em;
+        width: 11.5em;
+    }
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 7.5em;
+        width: 10.0em;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 43%;
+        ry: 46%;
+    }
+
+    #right-svg-progress {
+        height: 6em;
+        width: 9em;
+    }
+
+    #sale-progress-label {
+        margin-top: 48%;
+        font-size: 1em;
+    }
+
+    #mission-progress-label {
+        margin-top: 38%;
+        font-size: 1em;
+    }
+
+    #test-progress-label {
+        margin-top: 48%;
+        font-size: 1em;
+
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    
+    .sales-div{
+       margin-top: 100px; 
+    }
+    .mission-div{
+       margin-top: 100px; 
+    }
+    .test-div{
+       margin-top: 100px; 
+    }
+
+    .left-outer-svg {
+        height: 7.5em;
+        width: 10em;
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 43%;
+        ry: 46%;
+    }
+
+    #left-svg-progress {
+        height: 6em;
+        width: 9em;
+    }
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 9em;
+        width: 12em;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.8%;
+        cy: 50%;
+        rx: 44%;
+        ry: 46%;
+        stroke-width: 3.5;
+    }
+
+    #middle-svg-progress {
+        height: 7.5em;
+        width: 11em;
+    }
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 7.5em;
+        width: 10em;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 44%;
+        ry: 46%;
+    }
+
+    #right-svg-progress {
+        height: 6em;
+        width: 9em;
+    }
+
+    #sale-progress-label {
+        margin-top: 48%;
+    }
+
+    #mission-progress-label {
+        margin-top: 38%;
+    }
+
+    #test-progress-label {
+        margin-top: 48%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .sales-div{
+       margin-top: 90px; 
+    }
+    .mission-div{
+       margin-top: 90px; 
+    }
+    .test-div{
+       margin-top: 90px; 
+    }
+
+    .left-outer-svg {
+        height: 6.5em;
+        width: 8.5em;
+
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 46%;
+        ry: 47%;
+    }
+
+    #left-svg-progress {
+        height: 5.5em;
+        width: 7.5em;
+    }
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 8.5em;
+        width: 11.5em;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.8%;
+        cy: 50%;
+        rx: 44%;
+        ry: 46%;
+        stroke-width: 3;
+    }
+
+    #middle-svg-progress {
+        height: 7em;
+        width: 10.5em;
+    }
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 6.5em;
+        width: 9em;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 44%;
+        ry: 47%;
+    }
+
+    #right-svg-progress {
+        height: 5.5em;
+        width: 7.5em;
+    }
+
+    #sale-progress-label {
+        margin-top: 48%;
+    }
+
+    #mission-progress-label {
+        margin-top: 39%;
+    }
+
+    #test-progress-label {
+        margin-top: 48%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .left-outer-svg {
+        height: 4.2em;
+        width: 6.2em;
+    }
+
+    .left-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 40.5%;
+        ry: 47%;
+        stroke-width: 2.2;
+    }
+
+    #left-svg-progress {
+        height: 4.2em;
+        width: 6.2em;
+    }
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 5.7em;
+        width: 8.2em;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.8%;
+        cy: 50%;
+        rx: 42%;
+        ry: 47%;
+        fill: #020202;
+        stroke: #A7ABAC;
+        stroke-width: 3.2;
+    }
+
+    #middle-svg-progress {
+        height: 5.7em;
+        width: 8.2em;
+    }
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 4.2em;
+        width: 6.2em;
+    }
+
+    .right-outer-ellipse {
+        cx: 50%;
+        cy: 50%;
+        rx: 40.5%;
+        ry: 47%;
+        stroke-width: 2.2;
+    }
+
+    #right-svg-progress {
+        height: 4.2em;
+        width: 6.2em;
+    }
+
+    #sale-progress-label {
+        margin-top: 42%;
+        font-size: 0.75rem;
+    }
+
+    #mission-progress-label {
+        margin-top: 42%;
+        font-size: 0.75rem;
+    }
+
+    #test-progress-label {
+        margin-top: 42%;
+        font-size: 0.75rem;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .left-outer-svg {
+        height: 4em;
+        width: 6em;
+    }
+
+    .left-outer-ellipse {
+        cx: 49.5%;
+        cy: 50%;
+        rx: 40%;
+        ry: 47%;
+        stroke-width: 2;
+    }
+
+    #left-svg-progress {
+        height: 4em;
+        width: 6em;
+    }
+
+    /* Middle Progress Bar Start */
+    .middle-outer-svg {
+        height: 5.5em;
+        width: 8em;
+    }
+
+    .middle-outer-ellipse {
+        cx: 51.5%;
+        cy: 50%;
+        rx: 40.5%;
+        ry: 47%;
+        fill: #020202;
+        stroke: #A7ABAC;
+        stroke-width: 3;
+    }
+
+    #middle-svg-progress {
+        height: 5.5em;
+        width: 8em;
+    }
+
+    /* Right Progress Bar Start */
+    .right-outer-svg {
+        height: 4em;
+        width: 6em;
+    }
+
+    .right-outer-ellipse {
+        cx: 49.5%;
+        cy: 50%;
+        rx: 40%;
+        ry: 47%;
+        stroke-width: 2;
+    }
+
+    #right-svg-progress {
+        height: 4em;
+        width: 6em;
+    }
+
+    #sale-progress-label {
+        margin-top: 42%;
+        font-size: 0.7em;
+    }
+
+    #mission-progress-label {
+        margin-top: 42%;
+        font-size: 0.7em;
+    }
+
+    #test-progress-label {
+        margin-top: 42%;
+        font-size: 0.7em;
+    }
+}
+

@@ -1,0 +1,516 @@
+
+
+body{
+    /*height: 100%;*/
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+}
+.division{
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.container{
+    height: 58.5rem;
+    width: 100%;
+    background: #fff;
+}
+
+
+.header{
+    background: #cc0000;
+    display: flex;
+    height: 2%;
+    width: 100%;
+}
+
+.dash-section{
+    height: 93.5%;
+    width: 100%;
+    position: relative;
+}
+.line-div{
+    background-image: url('../image/line_image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-row{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-div{
+    width: 17%;
+    height: 80%;
+}
+
+.page-row{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-section{
+    width: 50%;
+    height: 90%;
+}
+
+.porsche-page{
+    width: 100%;
+    height: 85%;
+    position: relative;
+}
+.dash-row{
+    width: 100%;
+    height: 17%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-label{
+    width: 40%;
+    height: 100%;
+    border-radius:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Flama-Basic;
+    font-size: 1.5vw;
+    color: #cccccc;
+    outline: none;
+}
+.first-label:hover{
+    background: #cc0000;
+    color: #fff;
+}
+.first-label:hover .lbl-overview{
+    background: #cc0000;
+    color: #fff;
+}
+
+.lbl-overview{
+    color: #cccccc;
+    outline: none;
+}
+.lbl-overview:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.link-decoration{
+    text-decoration: none;
+}
+
+.result-cover{
+   width: 100%;
+    height: 17%;
+    position: absolute;
+    margin-top: 10%; 
+    display: block;
+}
+.result-row{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-label{
+    width: 40%;
+    height: 100%;
+    border-radius:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Flama-Basic;
+    font-size: 1.5vw;
+    color: #cccccc;
+}
+.second-label:hover{
+    background: #cc0000;
+    color: #fff;
+}
+.second-label:hover .lbl-overview{
+    background: #cc0000;
+    color: #fff;
+}
+
+.resultlist-cover{
+    width: 100%;
+    height: 17%;
+    margin-top: 10%;
+    position: absolute;
+    display: none;
+}
+
+.resulylist-row{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third-label{
+    width: 20%;
+    height: 100%;
+    border-radius:25px;
+    left: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Flama-Basic;
+    font-size: 1.5vw;
+    color: #cccccc;
+}
+.third-label:hover{
+    background: #cc0000;
+    color: #fff;
+}
+.third-label:hover .lbl-overview{
+    background: #cc0000;
+    color: #fff;
+}
+
+
+.fourth-label{
+    width: 20%;
+    height: 100%;
+    border-radius:25px;
+    left: 27%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Flama-Basic;
+    font-size: 1.5vw;
+    color: #cccccc;
+}
+.fourth-label:hover{
+    background: #cc0000;
+    color: #fff;
+}
+.fourth-label:hover .lbl-overview{
+    background: #cc0000;
+    color: #fff;
+}
+
+
+.fifth-label{
+    width: 20%;
+    height: 100%;
+    border-radius:25px;
+    left: 49%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Flama-Basic;
+    font-size: 1.5vw;
+    color: #cccccc;
+}
+.fifth-label:hover{
+    background: #cc0000;
+    color: #fff;
+}
+.fifth-label:hover .lbl-overview{
+    background: #cc0000;
+    color: #fff;
+}
+
+.sixth-label{
+    width: 20%;
+    height: 100%;
+    border-radius:25px;
+    left: 71%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Flama-Basic;
+    font-size: 1.5vw;
+    color: #cccccc;
+}
+.sixth-label:hover{
+    background: #cc0000;
+    color: #fff;
+}
+.sixth-label:hover .lbl-overview{
+    background: #cc0000;
+    color: #fff;
+}
+
+.map-row{
+    width: 100%;
+    height: 17%;
+    margin-top: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seventh-label{
+    width: 40%;
+    height: 100%;
+    border-radius:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Flama-Basic;
+    font-size: 1.5vw;
+    color: #cccccc;
+}
+.seventh-label:hover{
+    background: #cc0000;
+    color: #fff;
+}
+.seventh-label:hover .lbl-overview{
+    background: #cc0000;
+    color: #fff;
+}
+
+.rule-row{
+    width: 100%;
+    height: 17%;
+    margin-top: 30%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eighth-label{
+    width: 40%;
+    height: 100%;
+    border-radius:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Flama-Basic;
+    font-size: 1.5vw;
+    color: #cccccc;
+}
+.eighth-label:hover{
+    background: #cc0000;
+    color: #fff;
+}
+.eighth-label:hover .lbl-overview{
+    background: #cc0000;
+    color: #fff;
+}
+
+.cars-row{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.car-one{
+    width: 13%;
+    height: 70%;
+    position: absolute;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-two{
+    width: 13%;
+    height: 70%;
+    position: absolute;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-three{
+    width: 13%;
+    height: 70%;
+    position: absolute;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-four{
+    width: 13%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-five{
+    width: 13%;
+    height: 70%;
+    position: absolute;
+    left: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-six{
+    width: 13%;
+    height: 70%;
+    position: absolute;
+    left: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.footer{
+    background: #333333;
+    height: 5%;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width:1850px){
+    .container{
+        height: 56.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1800px){
+    .container{
+        height: 55rem;
+    }
+
+}
+
+@media only screen and (max-width:1750px){
+    .container{
+        height: 53.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1700px){
+    .container{
+        height: 52rem;
+    }
+
+}
+
+@media only screen and (max-width:1650px){
+    .container{
+        height: 51.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1600px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1550px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1500px){
+    .container{
+        height: 46rem;
+    }
+
+}
+
+@media only screen and (max-width:1450px){
+    .container{
+        height: 44.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1400px){
+    .container{
+        height: 39rem;
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .container{
+        height: 41.5rem;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .container{
+        height: 40rem;
+    }
+}
+@media only screen and (max-width:1250px){
+    .container{
+        height: 38.5rem;
+    }
+}
+@media only screen and (max-width:1200px){
+    .container{
+        height: 37rem;
+    }
+}
+@media only screen and (max-width:1150px){
+    .container{
+        height: 35.5rem;
+    }
+}
+@media only screen and (max-width:1100px){
+    .container{
+        height: 34rem;
+    }
+}
+@media only screen and (max-width:1050px){
+    .container{
+        height: 32.5rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .container{
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width:950px){
+    .container{
+        height: 28rem;
+    }
+}
+
+
+
+

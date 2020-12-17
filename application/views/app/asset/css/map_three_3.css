@@ -1,0 +1,1428 @@
+    body{
+        width: 100%;
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .division{
+        height: 100vh;
+        width: 100vw;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .container{
+        height: 933px;
+        background-size: 100% auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-row: 2% 13% 40% 5%;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .header{
+        background: #cc0000;
+        display: flex;
+        height: 18px;
+    }
+    .navigation{
+        display: flex;
+        height: 151px;
+        position: relative;
+        background: #fff;
+    }
+
+    .section{
+        height: 720px;
+        display: grid;
+        grid-template-columns:0.5fr 1fr 0.5fr;
+        grid-template-row: 100%;
+        position: relative;
+    }
+
+    .left-section{
+        background: aliceblue;
+    }
+
+    .middle-section{
+        background: #D8D8D8;
+
+        /*background-color: #ddd;*/
+    }
+    .right-section{
+        background: aliceblue;
+    }
+
+    .footer{
+        background: #333333;
+        height: 45px;
+    }
+
+    .porsche-logo{
+        position: absolute;
+        height: 90%;
+        width: 15%;
+        left: 2%;
+    }
+
+    .dash-logo{
+        position: absolute;
+        height: 20%;
+        width: 2%;
+        top:15%;
+        left: 70%;
+    }
+
+    .video-logo{
+        position: absolute;
+        height: 20%;
+        width: 2%;
+        top:15%;
+        left: 75%; 
+    }
+    .menu-logo{
+        position: absolute;
+        height: 20%;
+        width: 2%;
+        top:15%;
+        left: 80%;
+    }
+
+    .location-logo{
+        position: absolute;
+        height: 20%;
+        width: 1.5%;
+        top:15%;
+        left: 85%;
+    }
+
+    .user-logo{
+        position: absolute;
+        height: 20%;
+        width: 2%;
+        top:15%;
+        left: 90%;
+    }
+
+    .logout-logo{
+        position: absolute;
+        height: 20%;
+        width: 2%;
+        top:15%;
+        left: 95%;
+    }
+    /*
+        .container{
+            height: 625px; 
+        }
+        .navigation{
+            height: 100px;
+            background: #636;
+        }
+        .section{
+            height: 462px;
+        }*/
+
+    /*css For left Mapping Part section starts here*/
+    #img-map1-div1 {
+        width: 101%;
+        height: 100%;
+        background-color: transparent;
+        background-image: url('../../../asset/image/map/Map3-ImgLeft.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+    }
+
+
+    #img-map1-div1:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #fff;
+        opacity: 0.6;
+    }
+
+    .bcklvl-btn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 28%;
+        top: 5%;
+    }
+
+    /*css for central map partition*/
+    #imgmap2-div2_wrapper {
+        width: 100%;
+        height: 96%;
+        background-color: transparent;
+        background-image: url('../../../asset/image/map/Map3-CenterImg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 15px;
+        position: relative;
+        border-left: 4px dashed red;
+        border-right: 4px dashed red;
+    }
+
+    #mapcontainer {
+        width: 100%;
+        height: 100%;    
+        position: relative;
+    }
+
+    .division2-obj3 {
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        top: 60%;
+        left: 2%;
+    }
+
+
+    /*Keep It*/
+    .box1-bangkok {
+        width: 12%;
+        height: 20%;
+        position: absolute;
+        left: 21%;
+        top: 48%;
+        cursor: pointer;
+    }
+
+    .bangkok-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .arr-bankok2sing {
+        width: 8%;
+        height: 22%;
+        position: absolute;
+        bottom: 9%;
+        left: 19%;
+    }
+
+    .singaporediv {
+        width: 13%;
+        height: 22%;
+        position: absolute;
+        left: 27%;
+        bottom: 3%;
+        cursor: pointer;
+    }
+
+    .singapore-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box_sing2beijing {
+        width: 9%;
+        height: 48%;
+        position: absolute;
+        left: 40%;
+        bottom: 12%;
+    }
+
+    .sing2bjing {
+        width: 100%;
+        height: 100%;
+    }
+
+    .beijngbox {
+        width: 16%;
+        height: 22%;
+        position: absolute;
+        left: 30%;
+        top: 15%;
+        cursor: pointer;
+    }
+
+    .beijingimage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .class-tokyo {
+        width: 16%;
+        height: 22%;
+        position: absolute;
+        right: 2%;
+        top: 25%;
+        cursor: pointer;
+    }
+
+    .tokyo-ico {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bjing2tokyo {
+        width: 34%;
+        height: 10%;
+        position: absolute;
+        right: 19%;
+        top: 25%;
+    }
+
+    .beijing2tokyo-ico {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*----Keep It Ends----*/
+    .division4-r4 {
+        width: 18%;
+        height: 20%;
+        position: absolute;
+        left: 32%;
+        top: 40%;
+        cursor: pointer;
+    }
+
+    .division5-r1 {
+        width: 16%;
+        height: 22%;
+        position: absolute;
+        left: 21%;
+    }
+
+
+
+
+
+    .division6-box1 {
+        width: 16%;
+        height: 13%;
+        position: absolute;
+        left: 35%;
+        bottom: 25%;
+    }
+
+
+    .arr-islam2-delhi {
+        width: 100%;
+        height: 100%;
+    }
+
+    .division7-box1 {
+        width: 18%;
+        height: 20%;
+        position: absolute;
+        left: 52%;
+        bottom: 23%;
+        cursor: pointer;
+    }
+
+    .delhi-city1 {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+
+    .arrow-area {
+        width: 93.5%;
+        height: 37%;
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
+
+    .top-arrow {
+        width: 10%;
+        height: 95%;
+    }
+
+    .innerbox {
+        width: 40%;
+        height: 15%;
+        position: absolute;
+        left: 26%;
+        bottom: 27%;
+    }
+
+    .center-arrow {
+        width: 20%;
+        height: 100%;
+    }
+
+    .milan-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    #box3 {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        bottom: 15%;
+        left: 6%;
+        cursor: pointer;
+    }
+
+    .milan2istanbul {
+        width: 40%;
+        height: 12%;
+        position: absolute;
+        bottom: 10%;
+        left: 25%;
+    }
+
+    .bottom-arrow {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box4 {
+        width: 21%;
+        height: 20%;
+        position: absolute;
+        bottom: 15%;
+        right: 16%;
+        cursor: pointer;
+    }
+
+    .istanbul-icon {
+        width: 100%;
+        height: 100%;
+    }   
+
+    /*ends css for central map partition*/
+
+    /*css for right map partition*/
+    #ImgMap3Div3 {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        background-image: url('../../../asset/image/map/Map3_Right.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        border-left: 4px dashed red;
+    }
+
+    #ImgMap3Div3:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.5;
+        position: absolute;
+    }
+
+
+    #RowMap {
+        width: 100%;
+        height: 24%;
+        position: absolute;
+        bottom: 8%;
+        text-align: center;
+        opacity: none;
+        /*background: #566;*/
+    }
+
+    #col_Half_Map {
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        background-image: url(../../../asset/image/map/Mini-Map.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 27%;
+        z-index: 1;
+    }
+
+    .Mini_box {
+        width: 39px;
+        height: 26px;
+        border: 3px solid #cc0000;
+        position: absolute;
+        left: 45%;
+        top: 24%;
+    }
+
+    /*Right Map Ends*/
+
+
+    /*----css For Buttons-*/
+    .Nxtlvlbtn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cccccc;
+        color: #fff;
+        left: 35%;
+        top: 5%;
+    }
+
+    .NxtlvlbtnActive {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 35%;
+        top: 5%;
+    }
+
+    .Bcklvlbtn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 35%;
+        top: 5%;
+    }
+    /*Ends css for right map partition*/
+
+@media only screen and (max-width:1650px){
+    .container{
+        height: 900px; 
+    }
+
+    .header{
+        background: #cc0000;
+        display: flex;
+        height: 18px;
+    }
+    .navigation{
+        /*background: lightblue;*/
+        height: 150px;
+    }
+
+    .section{
+        /*background: yellow;*/
+        height: 690px;
+    }
+    .footer{
+        background: #333333;
+        height: 42px;
+    }
+
+    .container{
+        height: 625px; 
+    }
+    .navigation{
+        height: 103px;
+        background: #fff;
+    }
+    .section{
+        height: 462px;
+    }
+
+    /*css For left Mapping Part section starts here*/
+    #img-map1-div1 {
+        width: 102%;
+        height: 100%;
+        background-color: transparent;
+        background-image: url('../../../asset/image/map/Left-Part-Map.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+    }
+
+    #img-map1-div1:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #fff;
+        opacity: 0.6;
+    }
+
+    /*css for central map partition*/
+    #imgmap2-div2_wrapper {
+        width: 100%;
+        height: 93.5%;
+        background-color: transparent;
+        background-image: url('../../../asset/image/map/Map3-CenterImg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 15px;
+        position: relative;
+        border-left: 4px dashed red;
+        border-right: 4px dashed red;
+    }
+
+    #mapcontainer {
+        width: 100%;
+        height: 100%;    
+        position: relative;
+    }
+
+    .division2-obj3 {
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        top: 60%;
+        left: 2%;
+    }
+
+
+    /*Keep It*/
+    .box1-bangkok {
+        width: 12%;
+        height: 20%;
+        position: absolute;
+        left: 21%;
+        top: 48%;
+        cursor: pointer;
+    }
+
+    .bangkok-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bang2sing{
+        width: 100%;
+        height: 100%;
+    }
+
+    .arr-bankok2sing {
+        width: 8%;
+        height: 22%;
+        position: absolute;
+        bottom: 9%;
+        left: 19%;
+    }
+
+    .singaporediv {
+        width: 13%;
+        height: 22%;
+        position: absolute;
+        left: 27%;
+        bottom: 3%;
+        cursor: pointer;
+    }
+
+    .singapore-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box_sing2beijing {
+        width: 9%;
+        height: 48%;
+        position: absolute;
+        left: 40%;
+        bottom: 12%;
+    }
+
+    .sing2bjing {
+        width: 100%;
+        height: 100%;
+    }
+
+    .beijngbox {
+        width: 16%;
+        height: 22%;
+        position: absolute;
+        left: 30%;
+        top: 15%;
+        cursor: pointer;
+    }
+
+    .beijingimage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .class-tokyo {
+        width: 16%;
+        height: 22%;
+        position: absolute;
+        right: 10%;
+        top: 25%;
+        cursor: pointer;
+    }
+
+    .tokyo-ico {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bjing2tokyo {
+        width: 25%;
+        height: 10%;
+        position: absolute;
+        right: 27%;
+        top: 25%;
+    }
+
+    .beijing2tokyo-ico {
+        width: 100%;
+        height: 100%;
+    }   
+
+    .bcklvl-btn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 13%;
+        top: 5%;
+    }
+    /*----Keep It Ends----*/
+    .division4-r4 {
+        width: 18%;
+        height: 20%;
+        position: absolute;
+        left: 32%;
+        top: 40%;
+        cursor: pointer;
+    }
+
+    .division5-r1 {
+        width: 16%;
+        height: 22%;
+        position: absolute;
+        left: 21%;
+    }
+
+
+
+
+
+    #box1 {
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        left: 12%;
+        top: 10%;
+        z-index: 1;
+    }
+
+
+    .bergen-icon {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    #box2 {
+        width: 16%;
+        height: 20%;
+        position: absolute;
+        top: 37%;
+        left: 19%;
+        z-index: 1;
+    }
+
+    .berlin-icon {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .arrow-area {
+        width: 93.5%;
+        height: 37%;
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
+
+    .top-arrow {
+        width: 10%;
+        height: 95%;
+    }
+
+    .innerbox {
+        width: 40%;
+        height: 15%;
+        position: absolute;
+        left: 26%;
+        bottom: 27%;
+    }
+
+    .center-arrow {
+        width: 20%;
+        height: 100%;
+    }
+
+    .milan-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    #box3 {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        bottom: 15%;
+        left: 6%;
+        cursor: pointer;
+    }
+
+    .milan2istanbul {
+        width: 40%;
+        height: 12%;
+        position: absolute;
+        bottom: 10%;
+        left: 25%;
+    }
+
+    .bottom-arrow {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box4 {
+        width: 21%;
+        height: 20%;
+        position: absolute;
+        bottom: 15%;
+        right: 16%;
+        cursor: pointer;
+    }
+
+    .istanbul-icon {
+        width: 100%;
+        height: 100%;
+    }   
+
+    /*ends css for central map partition*/
+
+    /*css for right map partition*/
+    #ImgMap3Div3 {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        background-image: url('../../../asset/image/map/Map3_Right.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        border-left: 4px dashed red;
+    }
+
+    #ImgMap3Div3:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.5;
+        position: absolute;
+    }
+
+
+    #RowMap {
+        width: 100%;
+        height: 24%;
+        position: absolute;
+        bottom: 8%;
+        text-align: center;
+        opacity: none;
+        /*background: #566;*/
+    }
+
+    #col_Half_Map {
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        background-image: url('../../../asset/image/map/Mini-Map.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 27%;
+        z-index: 1;
+    }
+
+    .Mini_box {
+        width: 39px;
+        height: 26px;
+        border: 3px solid #cc0000;
+        position: absolute;
+        left: 45%;
+        top: 24%;
+    }
+
+    /*Right Map Ends*/
+
+
+    /*----css For Buttons-*/
+    .Nxtlvlbtn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cccccc;
+        color: #fff;
+        left: 28%;
+        top: 5%;
+    }
+
+    .NxtlvlbtnActive {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 28%;
+        top: 5%;
+    }
+
+    .Bcklvlbtn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 28%;
+        top: 5%;
+    }
+    /*Ends css for right map partition*/
+
+}
+
+@media only screen and (max-width:800px){
+    .bcklvl-btn{
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 8px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 5%;
+        top: 5%;
+    }
+
+}
+
+@media only screen and (max-width:360px){
+    .bcklvl-btn{
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 6px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 5%;
+        top: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media only screen and (max-width:1600px){
+    .container{
+        height: 870px; 
+    }
+
+    .navigation{
+        height: 140px; 
+    }
+    .section{
+            background: yellow;
+        height: 670px;
+    }
+    .footer{
+        background: #333333;
+        height: 42px;
+    }
+}*/
+
+/*@media only screen and (max-width:1550px){
+    .container{
+        height: 840px; 
+    }
+    .navigation{
+        height: 130px; 
+    }
+    .section{
+            background: yellow;
+        height: 650px;
+    }
+}*/
+
+/*@media only screen and (max-width:1500px){
+    .container{
+        height: 820px; 
+    }
+    .navigation{
+        height: 125px; 
+    }
+    .section{
+        height: 635px;
+    }
+}
+
+@media only screen and (max-width:1450px){
+    .container{
+        height: 790px; 
+    }
+    .navigation{
+        height: 120px; 
+    }
+    .section{
+        height: 610px;
+    }
+
+}*/
+
+/*device 1366 media rules*/
+/*@media only screen and (max-width:1400px){
+    .container{
+        height: 625px; 
+    }
+    .navigation{
+        height: 100px;
+        background: #636;
+    }
+    .section{
+        height: 462px;
+    }
+
+    css For left Mapping Part section starts here
+    #img-map1-div1 {
+        width: 102%;
+        height: 100%;
+        background-color: transparent;
+        background-image: url('../asset/images/Left-Part-Map.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+    }
+
+    #img-map1-div1:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #fff;
+        opacity: 0.6;
+    }
+
+    css for central map partition
+    #img-map2-div2-wrapper {
+        width: 100%;
+        height: 93.7%;
+        background-color: transparent;
+        background-image: url('../asset/images/Center-Half-Map.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 15px;
+        position: relative;
+        border-left: 4px dashed red;
+        border-right: 4px dashed red;
+    }
+
+    #mapcontainer {
+        width: 100%;
+        height: 100%;    
+        position: relative;
+    }
+
+    #box1 {
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        left: 12%;
+        top: 10%;
+        z-index: 1;
+    }
+
+
+    .bergen-icon {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    #box2 {
+        width: 16%;
+        height: 20%;
+        position: absolute;
+        top: 37%;
+        left: 19%;
+        z-index: 1;
+    }
+
+    .berlin-icon {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .arrow-area {
+        width: 93.5%;
+        height: 37%;
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
+
+    .top-arrow {
+        width: 10%;
+        height: 95%;
+    }
+
+    .innerbox {
+        width: 40%;
+        height: 15%;
+        position: absolute;
+        left: 26%;
+        bottom: 27%;
+    }
+
+    .center-arrow {
+        width: 20%;
+        height: 100%;
+    }
+
+    .milan-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    #box3 {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        bottom: 15%;
+        left: 6%;
+        cursor: pointer;
+    }
+
+    .milan2istanbul {
+        width: 40%;
+        height: 12%;
+        position: absolute;
+        bottom: 10%;
+        left: 25%;
+    }
+
+    .bottom-arrow {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box4 {
+        width: 21%;
+        height: 20%;
+        position: absolute;
+        bottom: 15%;
+        right: 16%;
+        cursor: pointer;
+    }
+
+    .istanbul-icon {
+        width: 100%;
+        height: 100%;
+    }   
+
+    ends css for central map partition
+
+    css for right map partition
+    #ImgMap3Div3 {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        background-image: url('../asset/images/Right-Half.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        border-left: 4px dashed red;
+    }
+
+    #ImgMap3Div3:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.5;
+        position: absolute;
+    }
+
+
+    #RowMap {
+        width: 100%;
+        height: 24%;
+        position: absolute;
+        bottom: 8%;
+        text-align: center;
+        opacity: none;
+        background: #566;
+    }
+
+    #col_Half_Map {
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        background-image: url(../asset/images/Mini-Map.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        left: 27%;
+        z-index: 1;
+    }
+
+    .Mini_box {
+        width: 39px;
+        height: 26px;
+        border: 3px solid #cc0000;
+        position: absolute;
+        left: 45%;
+        top: 24%;
+    }
+
+    Right Map Ends
+
+
+    ----css For Buttons-
+    .Nxtlvlbtn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cccccc;
+        color: #fff;
+        left: 28%;
+        top: 5%;
+    }
+
+    .NxtlvlbtnActive {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 28%;
+        top: 5%;
+    }
+
+    .Bcklvlbtn {
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-family: Flama-Basic;
+        font-size: 23px;
+        border-radius: 24.5px;
+        outline: none;
+        border: 1px solid #cccccc;
+        background: #cc0000;
+        color: #fff;
+        left: 28%;
+        top: 5%;
+    }
+    Ends css for right map partition
+
+
+}*/
+
+
+
+
+/*
+@media only screen and (max-width:1350px){
+    .container{
+        height: 730px; 
+    }
+    .navigation{
+        height: 105px; 
+    }
+    .section{
+        height: 565px;
+    }
+    .footer{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .container{
+        height: 700px; 
+    }
+
+    .navigation{
+        height: 100px; 
+    }
+    .section{
+        height: 542px;
+    }
+}
+
+@media only screen and (max-width:1250px){
+    .container{
+        height: 670px; 
+    }
+
+    .navigation{
+        height: 95px; 
+    }
+    .section{
+        height: 515px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .container{
+        height: 640px; 
+    }
+
+    .navigation{
+        height: 90px; 
+    }
+    .section{
+        height: 490px;
+    }
+}
+
+@@media only screen and (max-width:1150px){
+    .container{
+        height: 620px; 
+    }
+
+    .navigation{
+        height: 90px; 
+    }
+    .section{
+        height: 470px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .container{
+        height: 590px; 
+    }
+
+    .navigation{
+        height: 85px; 
+    }
+    .section{
+        height: 450px;
+    }
+
+    .footer{
+        height: 35px;
+    }
+
+}
+
+@media only screen and (max-width:1050px){
+    .container{
+        height: 560px; 
+    }
+
+    .navigation{
+        height: 80px; 
+    }
+    .section{
+        height: 425px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .container{
+        height: 550px; 
+    }
+
+    .navigation{
+        height: 80px; 
+    }
+    .section{
+        height: 415px;
+    }
+}
+
+@media only screen and (max-width:950px){
+    .container{
+        height: 550px; 
+    }
+}*/
+
+
+

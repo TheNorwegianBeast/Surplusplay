@@ -1,0 +1,728 @@
+
+
+body{
+    /*height: 100%;*/
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+}
+.division{
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.container{
+    height: 58.5rem;
+    width: 100%;
+    background: #fff;
+}
+
+.city-box{
+   width: 18%;
+   height: 100%;
+   margin-right: 3%;
+}
+
+
+.header{
+    background: #cc0000;
+    display: flex;
+    height: 2%;
+    width: 100%;
+}
+
+.dash-section{
+    height: 93.5%;
+    width: 100%;
+    position: relative;
+    background-image: url('../image/dashboard.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.line-div{
+    background-image: url('../image/line_image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+
+.nav-header{
+    width: 100%;
+    height: 17%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    width: 100%;
+    height: 83%;
+    display: flex;
+}
+.left-section{
+    width: 25%;
+    height: 100%;
+}
+
+.knowledge-label{
+    /*border: 1px solid red;*/
+    height: 10%;
+    display: flex;
+}
+.txt-know-trophy{
+    width: 60%;
+    height: 50%;
+    margin-left: 5%;
+    margin-top: 3%;
+    font-size: 1.5vw;
+    /*letter-spacing: 1px;*/
+    white-space: nowrap;
+    font-family: Flama-Medium;
+    /*background: lightcyan;*/
+}
+.que-know-trophy{
+    width: 8%;
+    height: 50%;
+    border-radius: 50%;
+    /*background: red;*/
+}
+
+.knowledge-trophy a{
+    text-decoration: none;
+}
+
+button{
+    cursor: not-allowed;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+video{
+    outline: none;   
+}
+
+.knowledge-trophy{
+    /*border: 1px solid yellow;*/
+    height: 55%;
+}
+.knowledge-level{
+    /*border: 1px solid red;*/
+    height: 10%;
+    display: flex;
+}
+.know-img{
+    width: 13%;
+    height: 90%;
+    margin-left: 5%;
+    /*border: 1px solid green;*/
+}
+.txt-know-level{
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    color: #fff;
+    /*letter-spacing: 1px;*/
+    font-size: 1.5vw;
+    font-family: "Flama-Medium";
+    white-space: nowrap;
+    /*border: 1px solid purple;*/
+}
+.que-know-level{
+    width: 8%;
+    height: 50%;
+    border-radius: 50%;
+    /*background: lightblue;*/
+}
+
+.knowledge-car{
+    /*border: 1px solid red;*/
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-car{
+    width: 45%;
+    height: 100%;
+    /*border: 1px solid green;*/
+}
+
+.level-one{
+    width: 95%;
+    height: 27%;
+    margin-left: 5%;
+    display: flex;
+    /*border: 1px solid green;*/
+}
+.level-two{
+    width: 95%;
+    height: 27%;
+    margin-left: 5%;
+    display: flex;
+    /*border: 1px solid green;*/
+}
+.level-three{
+    width: 95%;
+    height: 27%;
+    display: flex;
+    margin-left: 5%;
+    /*border: 1px solid green;*/
+}
+.level-gap{
+    width: 100%;
+    height: 5%;
+    /*border: 1px solid red;*/
+}
+
+.city-one{
+    width: 18%;
+    height: 100%;
+    /*display: none;*/
+    /*border: 1px solid blue;*/
+}
+.city-two{
+    width: 18%;
+    height: 100%;
+    margin-left: 5%;
+    /*display: none;*/
+    /*border: 1px solid blue;*/
+}
+
+.trophy-car{
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D8D8D8;
+}
+.trophy-car-div{
+    width: 100%;
+    height: 70%;
+    /*background: green;*/
+}
+
+
+.trophy-label{
+    width: 100%;
+    height: 25%;
+    background: #333333;
+    /*border: 1px solid #333333;*/
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 0.7vw;
+    font-family: Flama-Light;
+}
+
+.middle-section{
+    width: 50%;
+    height: 100%;
+}
+.right-section{
+    width: 25%;
+    height: 100%;
+}
+.target-city{
+    height: 35%;
+    position: relative;
+    /*border: 1px solid blue;*/
+}
+.que-city{
+    width: 9%;
+    height: 15%;
+    margin-left: 40%;
+    border-radius: 50%;
+    position: absolute;
+    /*background: green;*/
+}
+.city-cover{
+    width: 40%;
+    height: 75%;
+    margin-left: 45%;
+    position: absolute;
+    /*border: 1px solid yellow;*/
+}
+.city-circle{
+    width: 100%;
+    height: 80%;
+    /*background: lightblue;*/
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #cc0000;
+}
+.city-div{
+    height: 70%;
+    width: 70%;
+    /*background: red;*/
+}
+
+.city-time{
+    width: 100%;
+    height: 20%;
+    background: #333333;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1vw;
+    white-space: nowrap;
+    font-family: Flama-Medium;
+}
+
+.v-name, label{
+    cursor: pointer;
+}
+
+
+.target-section{
+    height: 20%;
+    /*border: 1px solid red;*/
+}
+.target-label{
+    height: 28%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 3px;
+    /*border: 1px solid green;*/
+}
+.target-text{
+    width: 25%;
+    height: 100%;
+    /*border: 1px solid blue;*/
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: "Flama-Medium";
+}
+.target-que{
+    width: 9%;
+    border-radius: 50%;
+}
+
+
+.target-circle{
+    height: 50%;
+    width: 100%;
+    /*border: 1px solid blue;*/ 
+    display: flex;
+}
+
+.sale-tar-c{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid yellow;*/
+}
+.test-tar-c{
+    width: 50%;
+    height: 100%;
+    /*border: 1px solid purple;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sales-circle{
+    width: 32%;
+    height: 100%;
+    border-radius: 50%;
+    background: #cc0000;
+    font-size: 1.5vw;
+    color: #fff;
+    /*display: table-cell;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    font-family: "Flama-Basic";
+}
+.test-circle{
+    width: 32%;
+    height: 100%;
+    border-radius: 50%;
+    background: #cc0000;
+    font-size: 1.5vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    font-family: "Flama-Basic";
+}
+.txt-circle{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    /*background: aqua;*/
+}
+
+.txt-sale-t{
+    width: 50%;
+    height: 100%;
+    /*background: burlywood;*/
+    text-align: center;
+    color: #fff;
+    font-family: Flama-Basic;
+
+}
+.sale-q-txt{
+    font-size: 1.2vw;
+}
+
+.txt-test-t{
+    width: 50%;
+    height: 100%;
+    /*background: blueviolet;*/
+    text-align: center;
+    color: #fff;
+    font-family: Flama-Basic;
+}
+
+
+.target-form{
+    height: 35%;
+    /*border: 1px solid red;*/
+}
+
+.reg-target{
+    height: 20%;
+    /*border: 1px solid green;*/
+    display: flex;
+}
+
+.gap-target{
+    height: 5%;
+    /*border: 1px solid blue;*/ 
+}
+.model-target{
+    height: 20%;
+    /*border: 1px solid green;*/ 
+}
+.new-used-target{
+    height: 20%;
+    display: flex;
+    /*border: 1px solid green;*/ 
+}
+.submit-target{
+    height: 20%;
+    /*border: 1px solid green;*/ 
+}
+
+.car-reg{
+    width: 50%;
+    height: 100%;
+    /*background: yellow;*/
+}
+.test-reg{
+    width: 50%;
+    height: 100%;
+    /*background: lightblue;*/
+
+}
+
+.car-reg-btn{
+    width: 90%;
+    height: 100%;
+    background: #cc0000;
+    color: #fff;
+    font-family: Flama-Basic;
+    font-size: 1vw;
+}
+
+.car-reg-btn:hover{
+    background: #b30000;
+}
+
+.test-reg-btn{
+    width: 90%;
+    height: 100%; 
+    font-family: Flama-Basic;
+    font-size: 1vw;
+}
+.model-reg{
+    height: 100%;
+    width: 95%;
+    font-family: Flama-Basic;
+    font-size: 1vw;
+}
+
+.amount-reg{
+    width: 50%;
+    height: 100%;
+}
+.btn-reg{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.new-btn:hover{
+    background: #b30000;
+}
+.new-btn{
+    width: 40%;
+    height: 100%;
+    background: #cc0000;
+    color: #fff;
+    font-size: 1vw;
+    font-family: Flama-Basic;
+}
+.used-btn{
+    width: 40%;
+    height: 100%;
+    margin-left: 9%;
+    font-size: 1vw;
+    font-family: Flama-Basic;
+}
+
+.amount-input{
+    width: 90%;
+    height: 100%;
+    font-family: Flama-Basic;
+    font-size: 1vw;
+}
+
+.submit-btn{
+    width: 95%;
+    height: 100%;
+    background: #cc0000;
+    color: #fff;
+    font-family: Flama-Basic;
+    font-size: 1vw;
+    transition: 0.3s;
+    letter-spacing: 1.2px;
+}
+
+.submit-btn:hover{
+    background: #b30000;
+}
+
+.form-error{
+    height: 12%;
+    width: 95%;
+    margin-top: 3%;
+    color: #cc0000;
+    text-align: center;
+    font-size: 1vw;
+    font-family: Flama-Basic;
+}
+
+.budget-alert{
+    height: 5%;
+    width: 95%;
+    display:none;
+}
+
+.footer{
+    background: #333333;
+    height: 5%;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width:1850px){
+    .container{
+        height: 56.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1800px){
+    .container{
+        height: 55rem;
+    }
+
+}
+
+@media only screen and (max-width:1750px){
+    .container{
+        height: 53.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1700px){
+    .container{
+        height: 52rem;
+    }
+
+}
+
+@media only screen and (max-width:1650px){
+    .container{
+        height: 51.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1600px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1550px){
+    .container{
+        height: 47.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1500px){
+    .container{
+        height: 46rem;
+    }
+
+}
+
+@media only screen and (max-width:1450px){
+    .container{
+        height: 44.5rem;
+    }
+    .knowledge-trophy{
+        height: 52%;
+    }
+
+    .level-gap {
+        width: 100%;
+        height: 2.5%;
+    }
+
+    .city-two{
+        margin-left: 3%;
+    }
+
+    .v-close{
+        position: absolute;
+        z-index: 36541;
+        top: 3%;
+    }
+
+    .video-re{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .replay-btn{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .quiz-car{
+        margin-top: 8%;
+    }
+
+    .knowledge-level{
+        margin-top: -6%;
+    }
+
+    .knowledge-car{
+        height: 23%;
+    }
+}
+
+@media only screen and (max-width:1400px){
+    .container{
+        height: 39rem;
+    }
+
+    .city-que-img{
+        width: 90%;
+        height: 100%;
+    }
+
+    .transaction-que-img{
+        width: 90%;
+        height: 100%;
+    }
+
+    .knowledge-lvl-que-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .trophy-que-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .container{
+        height: 41.5rem;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .container{
+        height: 40rem;
+    }
+}
+@media only screen and (max-width:1250px){
+    .container{
+        height: 38.5rem;
+    }
+}
+@media only screen and (max-width:1200px){
+    .container{
+        height: 37rem;
+    }
+}
+@media only screen and (max-width:1150px){
+    .container{
+        height: 35.5rem;
+    }
+}
+@media only screen and (max-width:1100px){
+    .container{
+        height: 34rem;
+    }
+}
+@media only screen and (max-width:1050px){
+    .container{
+        height: 32.5rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .container{
+        height: 31rem;
+    }
+}
+
+
+
+
